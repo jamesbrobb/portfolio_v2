@@ -1,0 +1,59 @@
+<svg width="20px" height="20px" viewBox="0 0 20 20">
+    <defs>
+        <rect id="classbot-nice-path-1" x="0" y="0" width="19.9600798" height="20" rx="2.5"></rect>
+        <polygon id="classbot-nice-path-3" points="-2.82094717 -1.109e-13 3.90769834 1.31181184 0.0619788437 21.155252 -6.66666667 19.8434401"></polygon>
+        <filter x="-14.2%" y="-7.1%" width="128.4%" height="114.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.299139493 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="classbot-nice-path-5" points="-1.99172836 -4.36001596 20.5885353 -3.62512966 20.5885353 2.99596409 -2.15621907 2.99596409"></polygon>
+        <filter x="-6.4%" y="-13.6%" width="112.7%" height="127.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="classbot-nice-path-7" points="-3.77831861 13.75 22.1545507 19.0418169 20.5162027 27.11854 -5.41666667 21.8267232"></polygon>
+        <filter x="-5.4%" y="-11.2%" width="110.9%" height="122.4%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.195538949 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="classbot-nice-path-9" points="19.6790528 0.416666667 26.8282387 1.81046675 22.9825192 21.6539069 15.8333333 20.2601068"></polygon>
+        <filter x="-13.6%" y="-7.1%" width="127.3%" height="114.1%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.201030344 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+
+    <mask id="mask-2" fill="white">
+        <use xlink:href="#classbot-nice-path-1"></use>
+    </mask>
+
+    <use id="Mask" fill="#333E47" xlink:href="#classbot-nice-path-1"></use>
+    <g id="classbot-nice-rect-top-dark-blue" mask="url(#mask-2)">
+        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#classbot-nice-path-3"></use>
+        <use fill="#2D5A7A" fill-rule="evenodd" xlink:href="#classbot-nice-path-3"></use>
+    </g>
+    <g id="classbot-nice-rect-top-blue" mask="url(#mask-2)">
+        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#classbot-nice-path-5"></use>
+        <use fill="#4B96CC" fill-rule="evenodd" transform="translate(0,2) rotate(-10 0 0)" xlink:href="#classbot-nice-path-5"></use>
+    </g>
+    <g id="classbot-nice-rect-bottom-red" mask="url(#mask-2)">
+        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#classbot-nice-path-7"></use>
+        <use fill="#D75049" fill-rule="evenodd" xlink:href="#classbot-nice-path-7"></use>
+    </g>
+    <g id="classbot-nice-rect-right-green" mask="url(#mask-2)">
+        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#classbot-nice-path-9"></use>
+        <use fill="#43A874" fill-rule="evenodd" xlink:href="#classbot-nice-path-9"></use>
+    </g>
+
+    <g id="face-nice" transform="translate(6.000000, 7.000000)" fill="#FFFFFF">
+        <path d="M13,8 C11.3333333,13.3333333 4.66666667,13.3333333 3,8 C9,8 11,8 13,8 Z"
+        id="Line" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <circle id="Oval-3-Copy-2" cx="1" cy="1" r="1"></circle>
+        <circle id="Oval-3-Copy-3" cx="7" cy="1" r="1"></circle>
+    </g>
+
+</svg>

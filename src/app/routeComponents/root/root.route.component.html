@@ -1,0 +1,25 @@
+
+<page-container *ngIf="pageConfig"
+  [detailsURI]="pageConfig.detailsURI"
+  [docURI]="pageConfig.docURI"
+  [githubLink]="pageConfig.githubLink">
+
+  <ng-container section="controls" *ngIf="pageConfig.controls">
+
+    <controls [controls]="pageConfig.controls"
+              (dataChange)="onControlDataChange($event)">
+    </controls>
+
+  </ng-container>
+
+  <ng-container *ngIf="pageConfig.examples">
+
+    <ng-container *ngFor="let example of pageConfig.examples">
+      <example-loader [selector]="example" [data]="controlData"></example-loader>
+    </ng-container>
+
+  </ng-container>
+
+</page-container>
+
+<div *ngIf="!pageConfig">404</div>

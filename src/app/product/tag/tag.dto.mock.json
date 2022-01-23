@@ -1,0 +1,17 @@
+{
+    "description": "some description",
+    "family": "CEFR Stage",
+    "locale": "en_EN",
+    "attributes": {
+        "category": null,
+        "subcategories": null,
+        "compassId": null,
+        "topic": null,
+        "theme": null,
+        "examples": null,
+        "categories": null
+    },
+    "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+    "label": "C1"
+}
+

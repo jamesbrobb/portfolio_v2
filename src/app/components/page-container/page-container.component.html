@@ -1,0 +1,82 @@
+
+<section class="details" [style.display]="hasLoaded && detailsURI ? 'block' : 'none'">
+
+  <markdown hrefListener [analyticsHrefListener]="'href-link'" [src]="'/assets/docs/' + detailsURI"></markdown>
+
+</section>
+
+<div class="docs" [style.display]="hasLoaded ? 'block' : 'none'">
+
+    <button *ngIf="githubLink"
+            (click)="onGithubLinkSelect(githubLink)"
+            [analyticsEvent]="{actionId:'github-link', propertyValueMap: {link: githubLink}}"
+            class="github-link">
+
+        <icon-component [name]="'github'"></icon-component>
+
+    </button>
+
+    <section class="docs">
+
+        <markdown hrefListener [analyticsHrefListener]="'href-link'" [src]="'/assets/docs/' + docURI" (load)="onLoad($event)" (error)="onError($event)"></markdown>
+
+    </section>
+
+    <section class="sections">
+
+        <div class="section" *ngFor="let section of sections" [ngClass]="{'is-open': section.isOpen}">
+
+            <div class="bar">
+
+                <div class="label">{{section.label}}</div>
+
+                <button
+                    (click)="section.isOpen = !section.isOpen"
+                    [analyticsEvent]="{actionId:'child-section', propertyValueMap: {label: section.label, value: section.isOpen ? 0 : 1}}">
+
+                    <icon-component [name]="'down-chevron'"></icon-component>
+
+                </button>
+
+            </div>
+
+            <div class="content" [@openClose]="section.isOpen">
+
+                <button *ngIf="section.githubLink"
+                    (click)="onGithubLinkSelect(section.githubLink)"
+                    [analyticsEvent]="{actionId:'github-link', propertyValueMap: {link: githubLink}}"
+                    class="github-link" >
+
+                    <icon-component [name]="'github'"></icon-component>
+
+                </button>
+
+                <markdown hrefListener [analyticsHrefListener]="'href-link'" [src]="'/assets/docs/' + section.docURI"></markdown>
+
+            </div>
+
+        </div>
+
+        <!--<markdown *ngFor="let docUri of docURIs" [src]="'/assets/docs/' + docUri" (load)="onLoad($event)" (error)="onError($event)"></markdown>-->
+
+    </section>
+
+    <section class="error" *ngIf="hasError">
+
+        <p>An error occurred whilst loading the docs.</p>
+
+    </section>
+
+    <section class="controls">
+
+        <ng-content select="[section=controls]"></ng-content>
+
+    </section>
+
+    <section class="example">
+
+        <ng-content></ng-content>
+
+    </section>
+
+</div>

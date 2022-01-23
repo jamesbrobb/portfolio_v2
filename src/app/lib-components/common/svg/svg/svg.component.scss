@@ -1,0 +1,11 @@
+:host {
+    display: block;
+
+    .ef-class-svg {
+        display: block;
+
+        ::ng-deep svg {
+            display: block;
+        }
+    }
+}

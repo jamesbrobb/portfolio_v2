@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1024 768" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect id="Rectangle" fill="#EDF4FA" x="0" y="0" width="1024" height="768"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#284155" x="112" y="270" width="270" height="26" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#284155" x="112" y="354" width="471" height="26" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#284155" x="603" y="354" width="309" height="26" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#284155" x="532" y="438" width="309" height="26" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#284155" transform="translate(676.500000, 535.000000) scale(-1, 1) translate(-676.500000, -535.000000) " x="441" y="522" width="471" height="26" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#284155" transform="translate(266.500000, 535.000000) scale(-1, 1) translate(-266.500000, -535.000000) " x="112" y="522" width="309" height="26" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#284155" x="112" y="606" width="346" height="26" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#284155" x="112" y="186" width="240" height="26" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#284155" x="372" y="186" width="360" height="26" rx="2"></rect>
+    <path d="M480,595.992679 C480,592.682198 482.679615,590 485.991324,590 L878.008676,590 C881.315315,590 884,592.689821 884,595.992679 L884,642.007321 C884,645.317802 881.320385,648 878.008676,648 L485.991324,648 C482.684685,648 480,645.310179 480,642.007321 L480,595.992679 Z" id="input" stroke-opacity="0.6" stroke="#284155" stroke-width="4" fill="#FFFFFF"></path>
+    <rect id="prompt-bkg" fill="#284155" x="470" y="580" width="22" height="22" rx="2"></rect>
+    <text id="prompt-number" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15" font-weight="bold" fill="#FFFFFF">
+        <tspan x="477" y="596">3</tspan>
+    </text>
+    <path d="M110,427.992679 C110,424.682198 112.679615,422 115.991324,422 L508.008676,422 C511.315315,422 514,424.689821 514,427.992679 L514,474.007321 C514,477.317802 511.320385,480 508.008676,480 L115.991324,480 C112.684685,480 110,477.310179 110,474.007321 L110,427.992679 Z" id="input" stroke-opacity="0.6" stroke="#284155" stroke-width="4" fill="#FFFFFF"></path>
+    <rect id="prompt-bkg" fill="#284155" x="100" y="412" width="22" height="22" rx="2"></rect>
+    <text id="prompt-number" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15" font-weight="bold" fill="#FFFFFF">
+        <tspan x="107" y="428">2</tspan>
+    </text>
+    <path d="M404,259.992679 C404,256.682198 406.679615,254 409.991324,254 L802.008676,254 C805.315315,254 808,256.689821 808,259.992679 L808,306.007321 C808,309.317802 805.320385,312 802.008676,312 L409.991324,312 C406.684685,312 404,309.310179 404,306.007321 L404,259.992679 Z" id="input" stroke-opacity="0.6" stroke="#284155" stroke-width="4" fill="#FFFFFF"></path>
+    <rect id="prompt-bkg" fill="#284155" x="394" y="243" width="22" height="22" rx="2"></rect>
+    <text id="prompt-number" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15" font-weight="bold" fill="#FFFFFF">
+        <tspan x="401" y="259">1</tspan>
+    </text>
+    <rect id="Header" fill="#203344" x="0" y="0" width="1024" height="64"></rect>
+</svg>

@@ -1,0 +1,108 @@
+{
+
+    "id": "1",
+
+    "topic": "Poetry, plays, short stories",
+
+    "title": "Films based on short stories: A review",
+
+    "description": "some description",
+    "isPublished": true,
+    "isPublishedByUser": true,
+    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+
+    "course": {
+        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+        "title": "Advanced"
+    },
+
+    "unit": {
+        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+        "title": "Poetry, plays, short stories",
+        "order": 4
+    },
+
+    "thumbnailAssetPath": "/media/image/DD0H97clzCKLuQXSe9cLEHgrH5KI9Q-vZJxknwXgN0rY",
+
+    "duration": 110,
+
+    "skills": [{
+        "id":"G9dCxjCen-8oD65dBmbJlyw",
+        "label": "Writing",
+        "family": "Lesson Type",
+        "familyLabel": "Lesson Type"
+    }],
+
+    "CEFRStages": [{
+        "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+        "label": "C1",
+        "family": "CEFR Stage",
+        "familyLabel": "CEFR Stage"
+    }],
+
+    "recommendedStudyEnvironment": [{
+        "id": "G9dCxjCen-BJDOlGP87VARp",
+        "label": "in class",
+        "family": "Study Environment",
+        "familyLabel": "Study Environment"
+    } ],
+
+    "objectives": "<p>You\u2019re going to:</p><ul><li>write a review of a film based on a short story.</li><li>practise words and phrases used in film reviews.</li></ul>",
+    "coveredRequirements":"<ul><li>Content of communication: Theoretical and complex subject areas, also of a more scientific nature, related to students' education, chosen specialisation area, societal issues and working life; thoughts, opinions, ideas, experiences and feelings; cultural expressions in modern times and historically, such as literary periods.</li><li>Content of communication: Societal issues, cultural, historical, political and social conditions, and also ethical and existential issues in different contexts and parts of the world where English is used.</li><li>Reception: Spoken language, also with different social and dialect features, and texts, including complex and formal texts which relate, discuss, argue, report, describe and investigate, also via film and other media.</li><li>\u2022&#9;Reception: Texts of different kinds and for different purposes, such as agreements, in-depth articles and scientific texts.</li><li>Production and interaction: Oral and written production and interaction in different situations and for different purposes where students argue from different perspectives, apply, reason, assess, investigate, negotiate and give reasons for their views.</li><li>Production and interaction: Processing of language and structure in their own and others' communications, in formal and complex contexts, and to create adaptation to genre, style and purpose.</li></ul>",
+
+    "vocabulary": [{
+        "definition": "to prove to be good, popular, etc. over a long period of time",
+        "constituentId": "9d67b724-a2b2-b56b-e005-1e62612344e5",
+        "headForm": "stand the test of time",
+        "id": "afb0ea3d-7a71-63d2-ef4a-cc43af44b17e",
+        "type": "idiom"
+    }, {
+        "definition": "not showing enough natural expression, emotion or movement",
+        "constituentId": "d774a016-da11-5071-eac1-2f3702ca9699",
+        "headForm": "wooden",
+        "id": "2acba9ad-0c48-267d-84bc-1290426219b2",
+        "type": "adjective"
+    }, {
+        "definition": "a person who strongly opposes somebody/something",
+        "constituentId": "6b956522-e5ef-9960-f9ec-644f317733b3",
+        "headForm": "antagonist",
+        "id": "0b3dcbe8-e77d-bc9c-ff1f-696f7fb9dd58",
+        "type": "noun"
+    }, {
+        "definition": "a very famous person, especially in a particular field, who is admired by other people",
+        "constituentId": "6cfd1ac9-7040-37f4-53ca-74a128f91957",
+        "headForm": "legend",
+        "id": "7142ccf0-ed75-4abc-2498-99ae3b978ee6",
+        "type": "noun"
+    }, {
+        "definition": "the things that are supposed to have happened to the characters in a film/movie, novel, etc, before the film/movie, etc. starts",
+        "constituentId": "d3cd021e-c72c-8efe-ee3a-484a754322be",
+        "headForm": "backstory",
+        "id": "55e3b8ef-e5bd-893b-2534-9c70229a6bb7",
+        "type": "noun"
+    }, {
+        "definition": "done without any good reason or purpose and often having harmful effects",
+        "constituentId": "c2c27d75-5273-6c36-efae-cfdff42d292c",
+        "headForm": "gratuitous",
+        "id": "eef2082b-998d-d169-d32f-e92c3a437b77",
+        "type": "adjective"
+    }, {
+        "definition": "impossible to understand ",
+        "constituentId": "badc95f3-e702-f399-a105-5b105b6550ba",
+        "headForm": "incomprehensible",
+        "id": "6c47ed06-87be-2490-564c-3c3bbe45cf13",
+        "type": "adjective"
+    }, {
+        "definition": "if a joke, a story, or an event falls flat, it completely fails to amuse people or to have the effect that was intended",
+        "constituentId": "814cc2d5-78f9-46f3-1fb6-93098fe2f908",
+        "headForm": "fall flat",
+        "id": "26eed23b-756a-dc87-83eb-1e135b0ac87a",
+        "type": "idiom"
+    }, {
+        "definition": "making people think seriously about a particular subject or issue",
+        "constituentId": "6c9209e4-753e-296a-f1a2-9f05c323062c",
+        "headForm": "thought-provoking",
+        "id": "9263ce17-af7d-cf38-ae2c-7fb2c08be506",
+        "type": "adjective"
+    }]
+}

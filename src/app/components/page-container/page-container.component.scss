@@ -1,0 +1,192 @@
+@import "src/app/styles/styles";
+
+
+:host {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  padding-top: 20px;
+
+  --controls-width: 100%;
+
+  @media(min-width: 320px) {
+    padding: 30px;
+  }
+
+  @media(min-width: 600px) {
+    --controls-width: 250px;
+  }
+
+  .details {
+    position: relative;
+    padding: 20px;
+    border: rgba(255, 255, 255, 0.2) solid 1px;
+    margin-bottom: 50px;
+  }
+
+  .docs {
+    position: relative;
+  }
+
+  .github-link {
+    position: absolute;
+    color: white;
+    top: 5px;
+    right: 8px;
+    transform: scale(1.5);
+    z-index: 1;
+    @include button_reset;
+  }
+
+  .controls {
+    max-width: var(--controls-width);
+    margin: 40px 0;
+  }
+
+  .example {
+    display: grid;
+    resize: both;
+    overflow: auto;
+    max-width: 100%;
+    height: fit-content;
+    background-color: #424242;
+    border: solid 1px rgba(255,255,255,.12);
+    padding: 10px;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  markdown {
+    display: block;
+    color: #D7D7D7;
+
+    & + markdown {
+      margin-top: 50px;
+    }
+
+    ::ng-deep {
+
+      h1, h2, h3, h4, code {
+        color: #E9E9E9;
+      }
+
+      code {
+        font-weight: normal;
+      }
+
+      p + h2,
+      pre + h2 {
+        margin-top: 50px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        > code {
+          color: white;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      li > ul {
+        margin-top: 10px;
+      }
+
+      .language-ts {
+        .token.operator,
+        .token.entity,
+        .token.url,
+        .language-css .token.string,
+        .style .token.string {
+          background: transparent;
+        }
+      }
+
+        .language-json {
+            .token.operator {
+                background: transparent;
+            }
+        }
+    }
+  }
+
+    .sections {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: rgba(255, 255, 255, 0.2) solid 1px;
+
+        &:empty {
+            display: none;
+        }
+
+        .section {
+            --section-border-color: rgba(255, 255, 255, 0.2);
+            --section-button-color: rgba(255, 255, 255, 0.5);
+            --section-button-transform: rotateX(0);
+            --section-label-opacity: 1;
+            --section-label-top: 0;
+
+            &.is-open {
+                --section-border-color: rgba(255, 255, 255, 0.5);
+                --section-button-color: rgba(255, 255, 255, 0.8);
+                --section-button-transform: rotateX(180deg);
+                --section-label-opacity: 0;
+                --section-label-top: 5px;
+            }
+
+            border: var(--section-border-color) solid 1px;
+            padding: 0 20px;
+            transition: border 500ms ease;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            .bar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 50px;
+
+                .label {
+                    position: relative;
+                    font-size: 16px;
+                    opacity: var(--section-label-opacity);
+                    transform: translateY(var(--section-label-top));
+                    transition: all 500ms ease;
+                    transition-property: opacity, transform;
+                }
+
+                button {
+                    @include button_reset;
+
+                    color: var(--section-button-color);
+
+                    transform: var(--section-button-transform);
+                    transition: color 0.5s, transform 0.5s cubic-bezier(0.35, 0, 0.25, 1);
+                }
+            }
+
+            .content {
+                position: relative;
+                overflow: hidden;
+
+                .github-link {
+                    right: 4px;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

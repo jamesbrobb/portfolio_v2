@@ -1,0 +1,35 @@
+:host {
+  display: block;
+  padding: 20px 0;
+
+  .side-menu-tree {
+    height: 100%;
+  }
+
+  .side-menu-tree-invisible {
+    display: none;
+  }
+
+  .mat-button {
+    width: 100%;
+    text-align: left;
+    border-radius: 0;
+    text-transform: capitalize;
+
+    &.active {
+      color: #ff5c8d;
+    }
+  }
+
+  .mat-tree > .mat-tree-node .mat-button {
+    padding-left: 44px;
+  }
+
+  .mat-nested-tree-node div[role=group] {
+    padding-left: 20px;
+  }
+
+  div[role=group] > .mat-tree-node {
+    padding-left: 20px;
+  }
+}

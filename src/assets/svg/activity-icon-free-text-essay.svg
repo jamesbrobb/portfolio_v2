@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1024 768" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect id="Rectangle" fill="#EDF4FA" x="0" y="0" width="1024" height="768"></rect>
+    <rect id="input" stroke-opacity="0.6" stroke="#284155" stroke-width="4" fill="#FFFFFF" x="225" y="142" width="574" height="548" rx="6"></rect>
+    <path d="M227,150.006316 C227,146.689119 229.684242,144 232.991971,144 L791.008029,144 C794.317303,144 797,146.688217 797,150.006316 L797,194 L227,194 L227,150.006316 Z" id="activity-header" fill-opacity="0.402261801" fill="#7E8D99"></path>
+    <rect id="Header" fill="#203344" x="0" y="0" width="1024" height="64"></rect>
+</svg>

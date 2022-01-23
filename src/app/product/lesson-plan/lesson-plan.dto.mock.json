@@ -1,0 +1,1771 @@
+{
+    "origin": {
+        "id": "3DJIVvfEeINpIyGiNmsXPfve-yY7X8POXb0jex",
+        "revision": "f6611d1c-6e87-11e5-aecb-06af63cbddca"
+    },
+    "description": "some description",
+    "productionStage": "published",
+    "searchable": true,
+    "topic": "Poetry, plays, short stories",
+    "skill": [{
+        "description": "",
+        "family": "Lesson Type",
+        "locale": "en_EN",
+        "attributes": {
+            "category": null,
+            "subcategories": null,
+            "compassId": null,
+            "topic": null,
+            "theme": null,
+            "examples": null,
+            "categories": null
+        },
+        "id": "G9dCxjCen-8oD65dBmbJlyw",
+        "label": "Writing"
+    }],
+    "BUAttributes": {
+        "CTX": {
+            "coveredRegionalRequirements": "<ul><li>Content of communication: Theoretical and complex subject areas, also of a more scientific nature, related to students' education, chosen specialisation area, societal issues and working life; thoughts, opinions, ideas, experiences and feelings; cultural expressions in modern times and historically, such as literary periods.</li><li>Content of communication: Societal issues, cultural, historical, political and social conditions, and also ethical and existential issues in different contexts and parts of the world where English is used.</li><li>Reception: Spoken language, also with different social and dialect features, and texts, including complex and formal texts which relate, discuss, argue, report, describe and investigate, also via film and other media.</li><li>\u2022&#9;Reception: Texts of different kinds and for different purposes, such as agreements, in-depth articles and scientific texts.</li><li>Production and interaction: Oral and written production and interaction in different situations and for different purposes where students argue from different perspectives, apply, reason, assess, investigate, negotiate and give reasons for their views.</li><li>Production and interaction: Processing of language and structure in their own and others' communications, in formal and complex contexts, and to create adaptation to genre, style and purpose.</li></ul>"
+        },
+        "ILS": {
+            "id": null,
+            "lessonPlan": {
+                "linguisticObjectives": null,
+                "assessmentOpportunities": null,
+                "aims": null
+            }
+        }
+    },
+    "id": "1",
+    "playlistItemAttributes": {
+        "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-lJW3JeG204AQ5": {
+            "tailoringSuggestion": "core",
+            "lessonSection": "language"
+        },
+        "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-N5VQ5oeyVlagk": {
+            "tailoringSuggestion": "core",
+            "lessonSection": "review"
+        },
+        "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-dBQ6B3e4glRm2": {
+            "tailoringSuggestion": "core",
+            "lessonSection": "produce"
+        },
+        "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-gBr4B3eoQgmmG": {
+            "tailoringSuggestion": "core",
+            "lessonSection": "leadIn"
+        },
+        "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-VDjWD0e26eNoL": {
+            "tailoringSuggestion": "core",
+            "lessonSection": "warmUp"
+        },
+        "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-QkYrkVe2wXxdA": {
+            "tailoringSuggestion": "core",
+            "lessonSection": "introduction"
+        },
+        "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-VDjWD0eoVZD1X": {
+            "tailoringSuggestion": "core",
+            "lessonSection": "read"
+        },
+        "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-lJW3JeG2mRjr0": {
+            "tailoringSuggestion": "core",
+            "lessonSection": "plan"
+        },
+        "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-MkZJkrewrd20A": {
+            "tailoringSuggestion": "support",
+            "lessonSection": "practice"
+        }
+    },
+    "thumbnailAssetId": {
+        "origin": {
+            "id": null,
+            "revision": null
+        },
+        "description": null,
+        "reference": "467517220",
+        "creator": null,
+        "topics": [],
+        "EFCode": "E7 U6 Wr P-01",
+        "relatedAssets": [],
+        "licensing": {
+            "validFrom": "2015-02-01T00:00:00.000000+0000",
+            "printAllowed": true,
+            "validTo": null,
+            "modificationAllowanceNotes": "N/A",
+            "mediaUse": {
+                "streaming": true,
+                "downloading": true,
+                "promotional": true
+            },
+            "copyrightCreditNotes": "[Photographer's Name]/[Collection]/[Thinkstock] or as otherwise shown on the Thinkstock website",
+            "sourceReferenceIds": ["3332_001"],
+            "maxPrintRun": 500000,
+            "copyrightCredit": false,
+            "rightsHolderId": "g4aSV7hZLul7U7nTBbSzJSeltAjfEesMgFJV-0gordp1mbMbQ6",
+            "modificationAllowed": false
+        },
+        "authenticity": [],
+        "publicationDate": {
+            "month": null,
+            "era": null,
+            "day": null,
+            "year": null
+        },
+        "attributes": {
+            "files": [{
+                "url": "/media/image/DD0H97clzCKLuQXSe9cLEHgrH5KI9Q-vZJxknwXgN0rY",
+                "width": "5072",
+                "bucket_key": "image/DD0H97clzCKLuQXSe9cLEHgrH5KI9Q-vZJxknwXgN0rY",
+                "mime_type": "image/jpeg",
+                "height": "3280"
+            }],
+            "imageFormat": [{
+                "description": "",
+                "family": "Image Format",
+                "locale": "en_EN",
+                "attributes": {
+                    "category": null,
+                    "subcategories": null,
+                    "compassId": null,
+                    "topic": null,
+                    "theme": null,
+                    "examples": null,
+                    "categories": null
+                },
+                "id": "G9dCxjCen-7pD16db4QOnDP",
+                "label": "photograph"
+            }],
+            "jobStatus": {
+                "state": "complete",
+                "job": "zo4h1auloFDNIP8hAxCNMh5xTlr-3JO1DZjYR178m"
+            },
+            "imageType": [{
+                "description": "",
+                "family": "Image Type",
+                "locale": "en_EN",
+                "attributes": {
+                    "category": null,
+                    "subcategories": null,
+                    "compassId": null,
+                    "topic": null,
+                    "theme": null,
+                    "examples": null,
+                    "categories": null
+                },
+                "id": "G9dCxjCen-lJMVPR5Lkry7G",
+                "label": "other"
+            }]
+        },
+        "id": "DD0H97clzCKLuQXSe9cLEHgrH5KI9Q-vZJxknwXgN0rY",
+        "subTitle": null,
+        "name": "Image of businesswoman of the future working with media screen",
+        "title": null,
+        "dialects": [],
+        "languages": [],
+        "state": "new",
+        "CEFRStages": [],
+        "uploadToken": null,
+        "type": "image",
+        "revision": "057d6670-44ee-11e5-928e-06af63cbddca"
+    },
+    "lessonObjectives": "<p>You\u2019re going to:</p><ul><li>write a review of a film based on a short story.</li><li>practise words and phrases used in film reviews.</li></ul>",
+    "vocabulary": [{
+        "definition": "to prove to be good, popular, etc. over a long period of time",
+        "constituentId": "9d67b724-a2b2-b56b-e005-1e62612344e5",
+        "headForm": "stand the test of time",
+        "id": "afb0ea3d-7a71-63d2-ef4a-cc43af44b17e",
+        "partOfSpeech": "idiom"
+    }, {
+        "definition": "not showing enough natural expression, emotion or movement",
+        "constituentId": "d774a016-da11-5071-eac1-2f3702ca9699",
+        "headForm": "wooden",
+        "id": "2acba9ad-0c48-267d-84bc-1290426219b2",
+        "partOfSpeech": "adjective"
+    }, {
+        "definition": "a person who strongly opposes somebody/something",
+        "constituentId": "6b956522-e5ef-9960-f9ec-644f317733b3",
+        "headForm": "antagonist",
+        "id": "0b3dcbe8-e77d-bc9c-ff1f-696f7fb9dd58",
+        "partOfSpeech": "noun"
+    }, {
+        "definition": "a very famous person, especially in a particular field, who is admired by other people",
+        "constituentId": "6cfd1ac9-7040-37f4-53ca-74a128f91957",
+        "headForm": "legend",
+        "id": "7142ccf0-ed75-4abc-2498-99ae3b978ee6",
+        "partOfSpeech": "noun"
+    }, {
+        "definition": "the things that are supposed to have happened to the characters in a film/movie, novel, etc, before the film/movie, etc. starts",
+        "constituentId": "d3cd021e-c72c-8efe-ee3a-484a754322be",
+        "headForm": "backstory",
+        "id": "55e3b8ef-e5bd-893b-2534-9c70229a6bb7",
+        "partOfSpeech": "noun"
+    }, {
+        "definition": "done without any good reason or purpose and often having harmful effects",
+        "constituentId": "c2c27d75-5273-6c36-efae-cfdff42d292c",
+        "headForm": "gratuitous",
+        "id": "eef2082b-998d-d169-d32f-e92c3a437b77",
+        "partOfSpeech": "adjective"
+    }, {
+        "definition": "impossible to understand ",
+        "constituentId": "badc95f3-e702-f399-a105-5b105b6550ba",
+        "headForm": "incomprehensible",
+        "id": "6c47ed06-87be-2490-564c-3c3bbe45cf13",
+        "partOfSpeech": "adjective"
+    }, {
+        "definition": "if a joke, a story, or an event falls flat, it completely fails to amuse people or to have the effect that was intended",
+        "constituentId": "814cc2d5-78f9-46f3-1fb6-93098fe2f908",
+        "headForm": "fall flat",
+        "id": "26eed23b-756a-dc87-83eb-1e135b0ac87a",
+        "partOfSpeech": "idiom"
+    }, {
+        "definition": "making people think seriously about a particular subject or issue",
+        "constituentId": "6c9209e4-753e-296a-f1a2-9f05c323062c",
+        "headForm": "thought-provoking",
+        "id": "9263ce17-af7d-cf38-ae2c-7fb2c08be506",
+        "partOfSpeech": "adjective"
+    }],
+    "title": "Films based on short stories: A review",
+    "state": "new",
+    "playlistItems": [{
+        "origin": {
+            "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-YnjmLMOm4nyGV",
+            "revision": "58aab786-6e87-11e5-aecb-06af63cbddca"
+        },
+        "procedureNotes": "<p>Please note that the <b>Writing</b> section in this unit spans two 55-minute lessons. This is to provide enough time for students to write their reviews. Students will be required to read a short story and watch a film before writing their reviews (see the <b>Plan</b> activity). Providing access to the stories and films, as well as giving students time to read and watch them, will require some prior planning.\u00a0</p><p>Encourage students to guess. The purpose of this activity is to generate discussion. It is not important if students get the answers wrong.</p><p><b>Extension</b></p><p>Students could discuss whether they have seen any of the films and give their opinions on them. They could also discuss whether they have encountered the things that inspired these films.</p><p>Students could also discuss other sources of inspiration for films, for example: autobiographies, plays, short stories, and older films that are remade.</p>",
+        "productionStage": "published",
+        "activities": [{
+            "origin": {
+                "id": "xpQueQCJVIEPTO4UzGCMxt8qFvPiXDF4ZIyGfqpC7AFXmc9PCzahebfJ4IqxfV1i0L-bbdWPMGWay5yX",
+                "revision": "58aab786-6e87-11e5-aecb-06af63cbddca"
+            },
+            "answerMode": "closed",
+            "orientation": "rows",
+            "assetId": null,
+            "state": "new",
+            "template": {
+                "version": "1.0.0",
+                "id": "categorization.text"
+            },
+            "distractors": [],
+            "interactionType": "dragAndDrop",
+            "id": "xpQueQCJVIEPTO4UzGCMxt8qFvPiXDF4ZIyGfqpC7AFXmc9PCzahebfJ4IqxfV1i0L-xX1PXG0Jk8b8d",
+            "categories": [{
+                "prompt": {
+                    "text": "<p><b>A comic</b></p>",
+                    "audioAssetId": null
+                },
+                "answers": ["<p><i>Batman v Superman: Dawn of Justice</i></p>", "<p><i>Guardians of the Galaxy</i></p>"]
+            }, {
+                "prompt": {
+                    "text": "<p><b>A theme park ride</b></p>",
+                    "audioAssetId": null
+                },
+                "answers": ["<p><i>Pirates of the Caribbean</i></p>"]
+            }, {
+                "prompt": {
+                    "text": "<p><b>A novel</b></p>",
+                    "audioAssetId": null
+                },
+                "answers": ["<p><i>The Hunger Games</i></p>"]
+            }, {
+                "prompt": {
+                    "text": "<p><b>A range of toys</b></p>",
+                    "audioAssetId": null
+                },
+                "answers": ["<p><i>The Lego Movie</i></p>", "<p><i>Transformers</i></p>"]
+            }, {
+                "prompt": {
+                    "text": "<p><b>A TV series</b></p>",
+                    "audioAssetId": null
+                },
+                "answers": ["<p><i>21 Jump Street</i></p>", "<p><i>Star Trek</i></p>"]
+            }],
+            "revision": "ff3b3da8-645b-11e6-bad2-06af63cbddca"
+        }],
+        "BUAttributes": {
+            "ILS": {
+                "id": null
+            }
+        },
+        "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-VDjWD0e26eNoL",
+        "referenceMaterialAssetIds": [],
+        "authoringNotes": "<p><b>Time sensitive:</b> All of these films were relevant as of July 2015, but will date quickly.</p><p>Refers to:</p><ul><li><span>Films based on short stories: A review; Plan</span><br/></li></ul><p><b>Submitted for review: Sources:</b></p><ul><li>http://www.theguardian.com/film/2014/sep/10/23-jump-street-channing-tatum-jonah-hill</li><li>http://www.britannica.com/topic/Pirates-of-the-Caribbean-The-Curse-of-the-Black-Pearl</li></ul>",
+        "controlTags": [{
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-1YD0LdMDeBYAB",
+            "label": "time sensitive"
+        }, {
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-mQMWZeDDm1jY4",
+            "label": "refers to another Playlist Item"
+        }, {
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-5bDN1dLgXZAWx",
+            "label": "submitted for review"
+        }],
+        "title": "Warm up",
+        "recommendedGrouping": [{
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-XnxG17JOQRA1L",
+            "label": "pair"
+        }, {
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-BJDOlGPLNLJeQ",
+            "label": "group"
+        }],
+        "stimuli": [],
+        "metadata": {
+            "actions": {
+                "deleted": {
+                    "date": null,
+                    "userId": null
+                },
+                "published": {
+                    "date": "2017-04-11T12:53:44.903090+0000",
+                    "course": {
+                        "title": "Advanced",
+                        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                        "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "playlist": {
+                        "title": "Films based on short stories: A review",
+                        "id": "3DJIVvfEeINpIyGiNmsXPfve-VDjWD0e2MP8BB",
+                        "revision": "ff3ad246-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                    "unit": {
+                        "title": "Poetry, plays, short stories",
+                        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                        "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                    }
+                },
+                "modified": {
+                    "date": "2017-04-11T12:53:44.903090+0000",
+                    "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+                },
+                "created": {
+                    "date": "2015-09-22T12:21:32.794546+0000",
+                    "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+                }
+            }
+        },
+        "state": "new",
+        "CEFRStages": [
+            {
+            "description": "",
+            "family": "CEFR Stage",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+            "label": "C1"
+        }
+        ],
+        "suggestedDuration": 5,
+        "availableTools": [],
+        "instructions": "<p>What do you know about Hollywood films? Match the films to the things that inspired them.</p>",
+        "revision": "e5a89cae-1eb5-11e7-8075-06af63cbddca"
+    }, {
+        "origin": {
+            "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-Wnv4EMO4jMRAr",
+            "revision": "63c32a54-6e87-11e5-aecb-06af63cbddca"
+        },
+        "procedureNotes": null,
+        "productionStage": "published",
+        "activities": [{
+            "origin": {
+                "id": "Xy8cpZFQbcAMHDBCEZFq8fdLumQtvjtl4cD0UBNiJmh7rf5McpehZp-Wnv4EMO4Xg6D8",
+                "revision": "63c32a54-6e87-11e5-aecb-06af63cbddca"
+            },
+            "answerMode": "n/a",
+            "objectivesText": "<p>You\u2019re going to:</p><ul><li>write a review of a film based on a short story.</li><li>practise words and phrases used in film reviews.</li></ul>",
+            "assetId": null,
+            "state": "new",
+            "template": {
+                "version": "1.0.0",
+                "id": "objectives"
+            },
+            "bgImageAssetId": "DD0H97clzCKLuQXSe9cLEHgrH5KI9Q-QkQw5Od1BxRdM",
+            "id": "Xy8cpZFQbcAMHDBCEZFq8fdLumQtvjtl4cD0UBNiJmh7rf5McpehZp-XnBYnge2L1vrv",
+            "revision": "ff3b6f8a-645b-11e6-bad2-06af63cbddca"
+        }],
+        "BUAttributes": {
+            "ILS": {
+                "id": null
+            }
+        },
+        "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-QkYrkVe2wXxdA",
+        "referenceMaterialAssetIds": [],
+        "authoringNotes": null,
+        "controlTags": [],
+        "title": "Introduction",
+        "recommendedGrouping": [{
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-JbnPZYJRpD40p",
+            "label": "class"
+        }],
+        "stimuli": [],
+        "metadata": {
+            "actions": {
+                "deleted": {
+                    "date": null,
+                    "userId": null
+                },
+                "published": {
+                    "date": "2017-04-11T12:53:44.936090+0000",
+                    "course": {
+                        "title": "Advanced",
+                        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                        "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "playlist": {
+                        "title": "Films based on short stories: A review",
+                        "id": "3DJIVvfEeINpIyGiNmsXPfve-VDjWD0e2MP8BB",
+                        "revision": "ff3ad246-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                    "unit": {
+                        "title": "Poetry, plays, short stories",
+                        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                        "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                    }
+                },
+                "modified": {
+                    "date": "2017-04-11T12:53:44.936090+0000",
+                    "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+                },
+                "created": {
+                    "date": "2015-09-22T12:21:32.982467+0000",
+                    "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+                }
+            }
+        },
+        "state": "new",
+        "CEFRStages": [{
+            "description": "",
+            "family": "CEFR Stage",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+            "label": "C1"
+        }],
+        "suggestedDuration": 2,
+        "availableTools": [],
+        "instructions": null,
+        "revision": "e5ada618-1eb5-11e7-8075-06af63cbddca"
+    }, {
+        "origin": {
+            "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-aQ37om578J8j1",
+            "revision": "6c6eab10-6e87-11e5-aecb-06af63cbddca"
+        },
+        "procedureNotes": "<p>Recommend students go to imdb.com if they need help with online research.</p><p><b>Suggested answers</b></p><ol><li>Students will have their own answers.</li><li>The films are all science fiction films. They are usually \u2018high concept\u2019 films (that is, they are based around a single, interesting idea). Most of the films are also action thrillers. They are usually set in a dystopian world, in which one man is fighting against an oppressive system. The lead role in each film is played by a male Hollywood star (Keanu Reeves, Harrison Ford, Tom Cruise, Nicolas Cage, Matt Damon, Arnold Schwarzenegger, and Colin Farrell).</li><li>Students will have their own answers.</li></ol><p><b>Extension</b></p><p>If there is time, students could watch trailers for the films they haven\u2019t seen.</p><p>Students could also look at the 2015 TV series <i>The Man in the High Castle </i>based on the 1962 Philip K. Dick novel of the same name.</p>",
+        "productionStage": "published",
+        "activities": [{
+            "origin": {
+                "id": "k9DuZdFNZfP2SbLTDJFL8HPAhD8f7lhYJTn8S7jSKVTVAIGrcgMTe2h2Vc1dsZlfpohg0-2Mw7PRZ7lkMLe",
+                "revision": "6c6eab10-6e87-11e5-aecb-06af63cbddca"
+            },
+            "answerMode": "n/a",
+            "assetId": null,
+            "items": [{
+                "discussionTopics": "<p>Have you seen any of these films? Give your opinion about any of the films you have seen.</p>",
+                "prompt": {
+                    "text": null,
+                    "audioAssetId": null
+                }
+            }, {
+                "discussionTopics": "<p>Look online for information about these films. What are some of the similarities between them?</p>",
+                "prompt": {
+                    "text": null,
+                    "audioAssetId": null
+                }
+            }, {
+                "discussionTopics": "<p>Would you like to see any of these films? Explain your answer.</p>",
+                "prompt": {
+                    "text": null,
+                    "audioAssetId": null
+                }
+            }],
+            "state": "new",
+            "template": {
+                "version": "1.0.0",
+                "id": "discussion"
+            },
+            "bgImageAssetId": "DD0H97clzCKLuQXSe9cLEHgrH5KI9Q-N5XAYld51werG",
+            "id": "k9DuZdFNZfP2SbLTDJFL8HPAhD8f7lhYJTn8S7jSKVTVAIGrcgMTe2h2Vc1dsZlfpohg0-wGyoG3p2MNEOX",
+            "revision": "ff3ce55e-645b-11e6-bad2-06af63cbddca"
+        }],
+        "BUAttributes": {
+            "ILS": {
+                "id": null
+            }
+        },
+        "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-gBr4B3eoQgmmG",
+        "referenceMaterialAssetIds": [],
+        "authoringNotes": "<p><b>Time sensitive:</b> If further films are made based on the work of Philip K. Dick, they should be added to the list.</p>",
+        "controlTags": [{
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-1YD0LdMDeBYAB",
+            "label": "time sensitive"
+        }],
+        "title": "Lead in",
+        "recommendedGrouping": [{
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-XnxG17JOQRA1L",
+            "label": "pair"
+        }, {
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-BJDOlGPLNLJeQ",
+            "label": "group"
+        }],
+        "stimuli": [{
+            "assetId": "ByDFvytrBhkoUBmcVEikKSKqHeX-xXbxk2rO051Ma",
+            "template": {
+                "version": "1.0.0",
+                "id": "asset"
+            },
+            "label": null
+        }],
+        "metadata": {
+            "actions": {
+                "deleted": {
+                    "date": null,
+                    "userId": null
+                },
+                "published": {
+                    "date": "2017-04-11T12:53:44.966452+0000",
+                    "course": {
+                        "title": "Advanced",
+                        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                        "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "playlist": {
+                        "title": "Films based on short stories: A review",
+                        "id": "3DJIVvfEeINpIyGiNmsXPfve-VDjWD0e2MP8BB",
+                        "revision": "ff3ad246-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                    "unit": {
+                        "title": "Poetry, plays, short stories",
+                        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                        "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                    }
+                },
+                "modified": {
+                    "date": "2017-04-11T12:53:44.966452+0000",
+                    "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+                },
+                "created": {
+                    "date": "2015-09-22T12:21:33.088923+0000",
+                    "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+                }
+            }
+        },
+        "state": "new",
+        "CEFRStages": [{
+            "description": "",
+            "family": "CEFR Stage",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+            "label": "C1"
+        }],
+        "suggestedDuration": 8,
+        "availableTools": ["searchWeb", "searchVideo"],
+        "instructions": "<p>Look at the list of films based on the writing of US author Philip K. Dick. Then discuss the questions.</p>",
+        "revision": "e5b24c72-1eb5-11e7-8075-06af63cbddca"
+    }, {
+        "origin": {
+            "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-N5oGaMnG63xOe",
+            "revision": "95a4d612-6e87-11e5-aecb-06af63cbddca"
+        },
+        "procedureNotes": "<p>Any answers that are close to the model answers are acceptable.</p><p><b>Language notes</b></p><ul><li><b>A conspiracy</b> is a secret plan to do something bad.</li><li>A person that shows <b>vulnerability</b> shows that he or she can be easily hurt mentally or physically.</li><li>Someone who is <b>psychic</b> has special mental powers such as the ability to know what other people are thinking, or the ability to predict the future.</li></ul>",
+        "productionStage": "published",
+        "activities": [{
+            "origin": {
+                "id": "bgmFM9sa5S0ZsmNFdjtJGI5pFB5SKlCDQhjkHp8IbDtegFY7sZdHjDIPVt74CzjcEzcGYckXfB1F2pSxNhnD-oJ3XNmnJvv1Z2",
+                "revision": "95a4d612-6e87-11e5-aecb-06af63cbddca"
+            },
+            "answerMode": "n/a",
+            "assetId": null,
+            "items": [{
+                "answerMode": "model",
+                "expectedNumberOfAnswers": null,
+                "prompt": {
+                    "text": "<p>What similarities are there between the short story and the film according to the review?</p>",
+                    "audioAssetId": null
+                },
+                "answers": ["The short story and the film are both set in the future. They both have the same basic plot."],
+                "template": {
+                    "version": "1.0.0",
+                    "id": "freetext.longresponse.item"
+                }
+            }, {
+                "answerMode": "model",
+                "expectedNumberOfAnswers": null,
+                "prompt": {
+                    "text": "<p>What differences are there between the short story and the film according to the review?</p>",
+                    "audioAssetId": null
+                },
+                "answers": ["In the short story, the character of Anderton is older, the technology is more old-fashioned, and the plot is less complicated."],
+                "template": {
+                    "version": "1.0.0",
+                    "id": "freetext.longresponse.item"
+                }
+            }, {
+                "answerMode": "model",
+                "expectedNumberOfAnswers": null,
+                "prompt": {
+                    "text": "<p>What positive things does the writer say about the film?</p>",
+                    "audioAssetId": null
+                },
+                "answers": ["The film is intelligent. The acting is very good. The film\u2019s vision of the future is impressive. The film is entertaining and thought-provoking."],
+                "template": {
+                    "version": "1.0.0",
+                    "id": "freetext.longresponse.item"
+                }
+            }, {
+                "answerMode": "model",
+                "expectedNumberOfAnswers": null,
+                "prompt": {
+                    "text": "<p>What negative things does the writer say about the film?</p>",
+                    "audioAssetId": null
+                },
+                "answers": ["The plot is too complicated. There are unnecessary scenes. The ending is not successful."],
+                "template": {
+                    "version": "1.0.0",
+                    "id": "freetext.longresponse.item"
+                }
+            }, {
+                "answerMode": "model",
+                "expectedNumberOfAnswers": null,
+                "prompt": {
+                    "text": "<p>What recommendations does the writer make about the film and the short story?</p>",
+                    "audioAssetId": null
+                },
+                "answers": ["The film is well worth watching. It is also a good idea to read the original short story."],
+                "template": {
+                    "version": "1.0.0",
+                    "id": "freetext.longresponse.item"
+                }
+            }],
+            "state": "new",
+            "template": {
+                "version": "1.0.0",
+                "id": "freetext.longresponse.group"
+            },
+            "id": "bgmFM9sa5S0ZsmNFdjtJGI5pFB5SKlCDQhjkHp8IbDtegFY7sZdHjDIPVt74CzjcEzcGYckXfB1F2pSxNhnD-ZMy0MLeWGYrvo",
+            "revision": "ff3d26ae-645b-11e6-bad2-06af63cbddca"
+        }],
+        "BUAttributes": {
+            "ILS": {
+                "id": null
+            }
+        },
+        "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-VDjWD0eoVZD1X",
+        "referenceMaterialAssetIds": [],
+        "authoringNotes": "<p><b>Reference to a specific market:</b> The review mentions the nationality of the two Swedish actors in <i>Minority Report</i> (Max von Sydow and Peter Stormare). These references can be removed for other markets if this feels unnatural.</p>",
+        "controlTags": [{
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-JbnPZYJ6nm57V",
+            "label": "reference to specific market"
+        }],
+        "title": "Read",
+        "recommendedGrouping": [{
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-bbpv3aXpPrJBJ",
+            "label": "individual"
+        }, {
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-XnxG17JOQRA1L",
+            "label": "pair"
+        }],
+        "stimuli": [{
+            "assetId": "ByDFvytrBhkoUBmcVEikKSKqHeX-E0LyEaPwmyDap",
+            "template": {
+                "version": "1.0.0",
+                "id": "asset"
+            },
+            "label": null
+        }],
+        "metadata": {
+            "actions": {
+                "deleted": {
+                    "date": null,
+                    "userId": null
+                },
+                "published": {
+                    "date": "2017-04-11T12:53:44.998019+0000",
+                    "course": {
+                        "title": "Advanced",
+                        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                        "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "playlist": {
+                        "title": "Films based on short stories: A review",
+                        "id": "3DJIVvfEeINpIyGiNmsXPfve-VDjWD0e2MP8BB",
+                        "revision": "ff3ad246-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                    "unit": {
+                        "title": "Poetry, plays, short stories",
+                        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                        "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                    }
+                },
+                "modified": {
+                    "date": "2017-04-11T12:53:44.998019+0000",
+                    "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+                },
+                "created": {
+                    "date": "2015-09-22T12:21:33.194549+0000",
+                    "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+                }
+            }
+        },
+        "state": "new",
+        "CEFRStages": [{
+            "description": "",
+            "family": "CEFR Stage",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+            "label": "C1"
+        }],
+        "suggestedDuration": 10,
+        "availableTools": [],
+        "instructions": "<p>Read the review of the film <i>Minority Report </i>and answer the questions.</p>",
+        "revision": "e5b7172a-1eb5-11e7-8075-06af63cbddca"
+    }, {
+        "origin": {
+            "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-QkVWLM1kO5Vbr",
+            "revision": "a38cad54-6e87-11e5-aecb-06af63cbddca"
+        },
+        "procedureNotes": "<p>Tell students not to use their dictionaries.\u00a0</p><p>If necessary, explain how to <b>guess the meaning of words from context</b> or have students read the reference material.</p><p><b>Variation</b></p><p>Students can complete the activity without reading the text.\u00a0</p><p><b>Language notes</b></p><ul><li>The main character in a story is called the <b>protagonist</b>. This is the person who opposes the <b>antagonist</b>.</li><li>A variety of words can be used with \u2018<b>plot</b>\u2019 when talking about stories, for example: a <b>plot hole</b> is something in a plot that makes no sense; a <b>plot device</b> is something that happens to move the plot forward; a plot line gives the main elements of a plot.</li></ul>",
+        "productionStage": "published",
+        "activities": [{
+            "origin": {
+                "id": "vzlf5bTbYS4eSYVu3EfXJS9Ku1lCaBtYZfnlhamFEKHZgS7ehmqcXzTQxt59HdkUaPfgDhl4-2Mw7PRZMrAl6J",
+                "revision": "a38cad54-6e87-11e5-aecb-06af63cbddca"
+            },
+            "answerMode": "closed",
+            "matchItems": [{
+                "answer": "<p>to continue to be popular after many years (phrase)</p>",
+                "text": "<p>stand the test of time</p>"
+            }, {
+                "answer": "<p>not showing enough feeling or movement (adjective)</p>",
+                "text": "<p>wooden</p>"
+            }, {
+                "answer": "<p>someone who strongly opposes another person (noun)</p>",
+                "text": "<p>antagonist</p>"
+            }, {
+                "answer": "<p>a famous person who is admired for doing something well (noun)</p>",
+                "text": "<p>legend</p>"
+            }, {
+                "answer": "<p>one part of a story (noun)</p>",
+                "text": "<p>plot strand</p>"
+            }, {
+                "answer": "<p>the history of a fictional character (noun)</p>",
+                "text": "<p>backstory</p>"
+            }, {
+                "answer": "<p>not appropriate or necessary (adjective)</p>",
+                "text": "<p>gratuitous</p>"
+            }, {
+                "answer": "<p>very hard to understand (adjective)</p>",
+                "text": "<p>incomprehensible</p>"
+            }, {
+                "answer": "<p>when a joke or story fails to have the planned effect (phrase)</p>",
+                "text": "<p>fall flat</p>"
+            }, {
+                "answer": "<p>making people think carefully about something (adjective)</p>",
+                "text": "<p>thought-provoking</p>"
+            }],
+            "assetId": null,
+            "state": "new",
+            "template": {
+                "version": "1.0.0",
+                "id": "matching.text.text"
+            },
+            "distractors": [],
+            "id": "vzlf5bTbYS4eSYVu3EfXJS9Ku1lCaBtYZfnlhamFEKHZgS7ehmqcXzTQxt59HdkUaPfgDhl4-MkZJkrewr6kQA",
+            "revision": "ff3d7be0-645b-11e6-bad2-06af63cbddca"
+        }],
+        "BUAttributes": {
+            "ILS": {
+                "id": null
+            }
+        },
+        "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-lJW3JeG204AQ5",
+        "referenceMaterialAssetIds": ["ByDFvytrBhkoUBmcVEikKSKqHeX-WnoLOEJNYgLZD"],
+        "authoringNotes": null,
+        "controlTags": [],
+        "title": "Language",
+        "recommendedGrouping": [{
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-bbpv3aXpPrJBJ",
+            "label": "individual"
+        }, {
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-XnxG17JOQRA1L",
+            "label": "pair"
+        }],
+        "stimuli": [{
+            "assetId": "ByDFvytrBhkoUBmcVEikKSKqHeX-BJorWW7Enwg3d",
+            "template": {
+                "version": "1.0.0",
+                "id": "asset"
+            },
+            "label": null
+        }],
+        "metadata": {
+            "actions": {
+                "deleted": {
+                    "date": null,
+                    "userId": null
+                },
+                "published": {
+                    "date": "2017-04-11T12:53:45.027275+0000",
+                    "course": {
+                        "title": "Advanced",
+                        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                        "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "playlist": {
+                        "title": "Films based on short stories: A review",
+                        "id": "3DJIVvfEeINpIyGiNmsXPfve-VDjWD0e2MP8BB",
+                        "revision": "ff3ad246-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                    "unit": {
+                        "title": "Poetry, plays, short stories",
+                        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                        "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                    }
+                },
+                "modified": {
+                    "date": "2017-04-11T12:53:45.027275+0000",
+                    "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+                },
+                "created": {
+                    "date": "2015-09-22T12:21:33.298582+0000",
+                    "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+                }
+            }
+        },
+        "state": "new",
+        "CEFRStages": [{
+            "description": "",
+            "family": "CEFR Stage",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+            "label": "C1"
+        }],
+        "suggestedDuration": 5,
+        "availableTools": [],
+        "instructions": "<p>Study the key language in bold within the film review. Then match the words and phrases to the definitions.\u00a0</p>",
+        "revision": "e5bb8ed6-1eb5-11e7-8075-06af63cbddca"
+    }, {
+        "origin": {
+            "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-4QJaVxWQJBp5A",
+            "revision": "aa5c1d40-6e87-11e5-aecb-06af63cbddca"
+        },
+        "procedureNotes": "<p>This practises the words and phrases from the <b>Language</b> activity.\u00a0</p><p><b>Language notes</b></p><p><b>Source material</b> is the original document, book, etc. that is used to provide information or ideas. The source material for a film could be a novel or play, for example.</p><p><b>Extension</b></p><p>Students could discuss whether they would like to see this film.</p>",
+        "productionStage": "published",
+        "activities": [{
+            "origin": {
+                "id": "72yfzgCxKFAmUlKfoMi23iLbcr2TZ4t1MhJzHZbtB4cDN-N5oGaMn5yQPQ8",
+                "revision": "aa5c1d40-6e87-11e5-aecb-06af63cbddca"
+            },
+            "answerMode": "n/a",
+            "assetId": null,
+            "items": [{
+                "answerMode": "closed",
+                "distractors": [],
+                "markedGapsText": "<h1>Review: For Your Eyes Only</h1><p>While I am a fan of James Bond, some older Bond films aren\u2019t great and haven\u2019t really <mark>stood the test of time</mark>. One of these films is 1981\u2019s <i>For Your Eyes Only</i>.</p><p>This film is based on two short stories by Ian Fleming: \u2018For Your Eyes Only\u2019 and \u2018Risico\u2019. These tales form two <mark>plot strands</mark> within the film. In the first story, Bond meets the beautiful assassin, Melina Havelock. In the second, Bond is caught in a battle between two crime bosses: Colombo, and his <mark>antagonist</mark> Kristatos.</p><p>While the source material used in <i>For Your Eyes Only</i> is strong, the main problem with the film is the acting. Although the James Bond of Fleming\u2019s stories is tough, Moore plays Bond as a cheerful joker (although most of his jokes <mark>fall flat</mark>). In addition, French model Carole Bouquet, who plays Melina Havelock, clearly can\u2019t act, and seems <mark>wooden</mark> and lifeless throughout the film. The only decent performance is provided by the great cinema <mark>legend</mark> Topol, who plays the part of Columbo.</p><p>Another issue is the film\u2019s overall plot \u2014 or lack of it. The film moves from one <mark>gratuitous</mark> action sequence to another for no real reason, with stunts involving helicopters, toboggan runs, dune buggies, submarines, and even a fight with an ice hockey team!</p><p>Recent Daniel Craig Bond films like <i>Skyfall</i> have been intelligent and <mark>thought-provoking</mark>. They have even provided Bond with a fascinating <mark>backstory</mark>, telling us about his parents and his home. <i>For Your Eyes Only</i>, in contrast, is a mess. I suggest reading the stories and forgetting the film.</p>",
+                "template": {
+                    "version": "1.0.0",
+                    "id": "gapfill.item"
+                },
+                "textAssetId": null
+            }],
+            "state": "new",
+            "template": {
+                "version": "1.0.0",
+                "id": "gapfill.group"
+            },
+            "interactionType": "dragAndDrop",
+            "id": "72yfzgCxKFAmUlKfoMi23iLbcr2TZ4t1MhJzHZbtB4cDN-JbrlbQDjorDLm",
+            "revision": "ff3daf5c-645b-11e6-bad2-06af63cbddca"
+        }],
+        "BUAttributes": {
+            "ILS": {
+                "id": null
+            }
+        },
+        "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-MkZJkrewrd20A",
+        "referenceMaterialAssetIds": [],
+        "authoringNotes": "<p>Refers to:</p><ul><li><span>Films based on short stories: A review; Language</span><br/></li></ul>",
+        "controlTags": [{
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-mQMWZeDDm1jY4",
+            "label": "refers to another Playlist Item"
+        }],
+        "title": "Practice",
+        "recommendedGrouping": [{
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-bbpv3aXpPrJBJ",
+            "label": "individual"
+        }, {
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-XnxG17JOQRA1L",
+            "label": "pair"
+        }],
+        "stimuli": [],
+        "metadata": {
+            "actions": {
+                "deleted": {
+                    "date": null,
+                    "userId": null
+                },
+                "published": {
+                    "date": "2017-04-11T12:53:45.058411+0000",
+                    "course": {
+                        "title": "Advanced",
+                        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                        "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "playlist": {
+                        "title": "Films based on short stories: A review",
+                        "id": "3DJIVvfEeINpIyGiNmsXPfve-VDjWD0e2MP8BB",
+                        "revision": "ff3ad246-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                    "unit": {
+                        "title": "Poetry, plays, short stories",
+                        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                        "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                    }
+                },
+                "modified": {
+                    "date": "2017-04-11T12:53:45.058411+0000",
+                    "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+                },
+                "created": {
+                    "date": "2015-09-22T12:21:33.398012+0000",
+                    "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+                }
+            }
+        },
+        "state": "new",
+        "CEFRStages": [{
+            "description": "",
+            "family": "CEFR Stage",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+            "label": "C1"
+        }],
+        "suggestedDuration": 5,
+        "availableTools": [],
+        "instructions": "<p>Fill in the gaps to complete the film review.</p>",
+        "revision": "e5c04e94-1eb5-11e7-8075-06af63cbddca"
+    }, {
+        "origin": {
+            "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-GDwkxMNDL1pAV",
+            "revision": "b52782be-6e87-11e5-aecb-06af63cbddca"
+        },
+        "procedureNotes": "<p>Students may need help with locating films and short stories. Some older stories (such as those by Conan Doyle, Dickens, Fitzgerald, and Irving) will be available online from sources like Project Gutenberg (https://www.gutenberg.org/). Some films may be available via streaming services.</p><p>Have students decide which film to choose by researching them online. Recommend students go to <b>http://www.imdb.com </b>if they need help with online research. Please feel free to shorten the list of films, or add to it if necessary.</p><p>Students should be made aware that the stories the films are based on vary in length and complexity.</p><p>If there is time in the lesson once students have chosen, located, and researched the stories and films, they can begin to read the stories. Ideally students will finish reading the stories and watching the films outside the classroom. However, time could be allocated to this in a lesson, depending on the classroom situation.</p><p><b>Variation</b></p><p>Students could watch a film based on a novel they are studying, and write a review on it.</p><p>Students could look at other forms of source material, and watch films based on them, for example: comic strips, non-fiction books, plays, and TV shows.</p>",
+        "productionStage": "published",
+        "activities": [{
+            "origin": {
+                "id": "k9DuZdFNZfP2SbLTDJFL8HPAhD8f7lhYJTn8S7jSKVTVAIGrcgMTe2h2Vc1dsZlfpohg0-Ax0vWMDxMv21m",
+                "revision": "b52782be-6e87-11e5-aecb-06af63cbddca"
+            },
+            "answerMode": "n/a",
+            "assetId": null,
+            "items": [{
+                "discussionTopics": "<p><b>Choose a film to review from the list of films based on short stories. Then research:</b></p><ul><li>background information on the film (its genre, director, actors, critical reception, etc.)</li><li>background information on the short story that the film is based on (its publication date, critical reception, author, etc.)</li></ul>",
+                "prompt": {
+                    "text": "",
+                    "audioAssetId": null
+                }
+            }, {
+                "discussionTopics": "<p><b>Read the short story and take notes on:</b></p><ul><li>interesting elements of the plot</li><li>important characters</li><li>setting and atmosphere</li><li>theme and message (if any)</li><li>your overall opinion of the story</li></ul>",
+                "prompt": {
+                    "text": "",
+                    "audioAssetId": null
+                }
+            }, {
+                "discussionTopics": "<p><b>Watch the film and take notes on:</b></p><ul><li>similarities and differences between the film and the short story (characters, plot, setting, theme, etc.)</li><li>the acting</li><li>the dialogue</li><li>style and design (costume, set, sound and music, special effects, etc.)</li><li>your overall opinion of the film</li></ul>",
+                "prompt": {
+                    "text": "",
+                    "audioAssetId": null
+                }
+            }],
+            "state": "new",
+            "template": {
+                "version": "1.0.0",
+                "id": "discussion"
+            },
+            "bgImageAssetId": "DD0H97clzCKLuQXSe9cLEHgrH5KI9Q-N5XAYld51werG",
+            "id": "k9DuZdFNZfP2SbLTDJFL8HPAhD8f7lhYJTn8S7jSKVTVAIGrcgMTe2h2Vc1dsZlfpohg0-LDPRDAEBeXnQn",
+            "revision": "ff3de9c2-645b-11e6-bad2-06af63cbddca"
+        }],
+        "BUAttributes": {
+            "ILS": {
+                "id": null
+            }
+        },
+        "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-lJW3JeG2mRjr0",
+        "referenceMaterialAssetIds": [],
+        "authoringNotes": "<p><b>Time sensitive: </b>The list of films based on short stories was written in July 2015. It will need to be updated as new films are made based on short stories.</p><p><b>Culturally sensitive:</b> Some of the films and stories have material that may regarded as inappropriate for some markets (for example, sexual content in <i>Brokeback Mountain</i>, Central Asian politics in <i>The Living Daylights</i>). Please review for new markets.</p>",
+        "controlTags": [{
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-1YD0LdMDeBYAB",
+            "label": "time sensitive"
+        }, {
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-pQMpXaD6jLnx4",
+            "label": "culturally sensitive"
+        }],
+        "title": "Plan",
+        "recommendedGrouping": [{
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-bbpv3aXpPrJBJ",
+            "label": "individual"
+        }, {
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-XnxG17JOQRA1L",
+            "label": "pair"
+        }],
+        "stimuli": [{
+            "assetId": "ByDFvytrBhkoUBmcVEikKSKqHeX-bbBxkgWR4YN4J",
+            "template": {
+                "version": "1.0.0",
+                "id": "asset"
+            },
+            "label": null
+        }, {
+            "assetId": "ByDFvytrBhkoUBmcVEikKSKqHeX-eo6xk4xOY1gPB",
+            "template": {
+                "version": "1.0.0",
+                "id": "asset"
+            },
+            "label": null
+        }],
+        "metadata": {
+            "actions": {
+                "deleted": {
+                    "date": null,
+                    "userId": null
+                },
+                "published": {
+                    "date": "2017-04-11T12:53:45.086643+0000",
+                    "course": {
+                        "title": "Advanced",
+                        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                        "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "playlist": {
+                        "title": "Films based on short stories: A review",
+                        "id": "3DJIVvfEeINpIyGiNmsXPfve-VDjWD0e2MP8BB",
+                        "revision": "ff3ad246-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                    "unit": {
+                        "title": "Poetry, plays, short stories",
+                        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                        "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                    }
+                },
+                "modified": {
+                    "date": "2017-04-11T12:53:45.086643+0000",
+                    "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+                },
+                "created": {
+                    "date": "2015-09-22T12:21:33.503047+0000",
+                    "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+                }
+            }
+        },
+        "state": "new",
+        "CEFRStages": [{
+            "description": "",
+            "family": "CEFR Stage",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+            "label": "C1"
+        }],
+        "suggestedDuration": 20,
+        "availableTools": ["searchWeb"],
+        "instructions": "<p>Plan a review of a film that is based on a short story.</p>",
+        "revision": "e5c49df0-1eb5-11e7-8075-06af63cbddca"
+    }, {
+        "origin": {
+            "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-OZPmaM6ZdLZr7",
+            "revision": "c0c15852-6e87-11e5-aecb-06af63cbddca"
+        },
+        "procedureNotes": "<p>This activity should be done once students have had a chance to read their short stories and watch their films (this may be a week or more after the <b>Plan</b> activity).</p><p>In the last lesson, students:</p><ul><li>read a review of a film based on a short story.</li><li>practised words and phrases used in film reviews.</li><li>chose a film based on a short story to review.</li></ul><p>In this activity students review their reactions to the story and film that they chose.</p><p><b>Variation</b></p><p>Have students discuss these questions about the short story and film that they chose.</p><ul><li>What is the basic plot of the short story?</li><li>How is the film different to the short story?</li><li>What are some of the film\u2019s positive aspects?</li><li>What are some of the film\u2019s negative aspects?</li><li>Would you recommend the film?</li><li>Would you recommend the short story?</li></ul>",
+        "productionStage": "published",
+        "activities": [{
+            "origin": {
+                "id": "k9DuZdFNZfP2SbLTDJFL8HPAhD8f7lhYJTn8S7jSKVTVAIGrcgMTe2h2Vc1dsZlfpohg0-oJ3XNmnJB1b76",
+                "revision": "c0c15852-6e87-11e5-aecb-06af63cbddca"
+            },
+            "answerMode": "n/a",
+            "assetId": null,
+            "items": [{
+                "discussionTopics": "<p>What did we cover in the last lesson?</p>",
+                "prompt": {
+                    "text": null,
+                    "audioAssetId": null
+                }
+            }],
+            "state": "new",
+            "template": {
+                "version": "1.0.0",
+                "id": "discussion"
+            },
+            "bgImageAssetId": "DD0H97clzCKLuQXSe9cLEHgrH5KI9Q-QkQw5Od1BxRdM",
+            "id": "k9DuZdFNZfP2SbLTDJFL8HPAhD8f7lhYJTn8S7jSKVTVAIGrcgMTe2h2Vc1dsZlfpohg0-QkYrkVepDe1lg",
+            "revision": "ff3f5adc-645b-11e6-bad2-06af63cbddca"
+        }],
+        "BUAttributes": {
+            "ILS": {
+                "id": null
+            }
+        },
+        "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-N5VQ5oeyVlagk",
+        "referenceMaterialAssetIds": [],
+        "authoringNotes": "<p>Refers to:</p><ul><li><span>Films based on short stories: A review; Plan</span><br/></li></ul>",
+        "controlTags": [{
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-mQMWZeDDm1jY4",
+            "label": "refers to another Playlist Item"
+        }],
+        "title": "Review",
+        "recommendedGrouping": [{
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-XnxG17JOQRA1L",
+            "label": "pair"
+        }, {
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-BJDOlGPLNLJeQ",
+            "label": "group"
+        }],
+        "stimuli": [],
+        "metadata": {
+            "actions": {
+                "deleted": {
+                    "date": null,
+                    "userId": null
+                },
+                "published": {
+                    "date": "2017-04-11T12:53:45.176561+0000",
+                    "course": {
+                        "title": "Advanced",
+                        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                        "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "playlist": {
+                        "title": "Films based on short stories: A review",
+                        "id": "3DJIVvfEeINpIyGiNmsXPfve-VDjWD0e2MP8BB",
+                        "revision": "ff3ad246-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                    "unit": {
+                        "title": "Poetry, plays, short stories",
+                        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                        "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                    }
+                },
+                "modified": {
+                    "date": "2017-04-11T12:53:45.176561+0000",
+                    "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+                },
+                "created": {
+                    "date": "2015-09-22T12:21:33.631991+0000",
+                    "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+                }
+            }
+        },
+        "state": "new",
+        "CEFRStages": [{
+            "description": "",
+            "family": "CEFR Stage",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+            "label": "C1"
+        }],
+        "suggestedDuration": 10,
+        "availableTools": [],
+        "instructions": null,
+        "revision": "e5d2563e-1eb5-11e7-8075-06af63cbddca"
+    }, {
+        "origin": {
+            "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-oJ3XNmnJr6Bov",
+            "revision": "cd63372e-6e87-11e5-aecb-06af63cbddca"
+        },
+        "procedureNotes": "<p>Set a word count for the reviews that students will write.</p><p>As a suggestion, students could write 250\u2013600 words, depending on the classroom situation.</p><p>Students should use their own word processing application to plan and write their review.</p><p>Have students write their reviews, using the notes that they wrote in the <b>Plan</b> activity.\u00a0</p><p>Make sure that students check and edit each other\u2019s work before sending it to you for assessment.</p>",
+        "productionStage": "published",
+        "activities": [{
+            "origin": {
+                "id": "k9DuZdFNZfP2SbLTDJFL8HPAhD8f7lhYJTn8S7jSKVTVAIGrcgMTe2h2Vc1dsZlfpohg0-Wnv4EMOn7E3BW",
+                "revision": "cd63372e-6e87-11e5-aecb-06af63cbddca"
+            },
+            "answerMode": "n/a",
+            "assetId": null,
+            "items": [{
+                "discussionTopics": "<p><b>Read the reference material \u2018A film review\u2019. Then plan your review.</b></p>",
+                "prompt": {
+                    "text": null,
+                    "audioAssetId": null
+                }
+            }, {
+                "discussionTopics": "<p><b>Write your review.</b></p>",
+                "prompt": {
+                    "text": null,
+                    "audioAssetId": null
+                }
+            }],
+            "state": "new",
+            "template": {
+                "version": "1.0.0",
+                "id": "discussion"
+            },
+            "bgImageAssetId": "DD0H97clzCKLuQXSe9cLEHgrH5KI9Q-N5XAYld51werG",
+            "id": "k9DuZdFNZfP2SbLTDJFL8HPAhD8f7lhYJTn8S7jSKVTVAIGrcgMTe2h2Vc1dsZlfpohg0-QkYrkVepy3RQY",
+            "revision": "ff3f9204-645b-11e6-bad2-06af63cbddca"
+        }],
+        "BUAttributes": {
+            "ILS": {
+                "id": null
+            }
+        },
+        "id": "N2gSMLS03HXYSpVigbfort9KiYNtaxi1AFmO-dBQ6B3e4glRm2",
+        "referenceMaterialAssetIds": ["ByDFvytrBhkoUBmcVEikKSKqHeX-RxbYORBDLOm75"],
+        "authoringNotes": "<p>Refers to:</p><ul><li><span>Films based on short stories: A review; Plan</span><br/></li></ul>",
+        "controlTags": [{
+            "description": "",
+            "family": "Authoring Control",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-mQMWZeDDm1jY4",
+            "label": "refers to another Playlist Item"
+        }],
+        "title": "Produce",
+        "recommendedGrouping": [{
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-bbpv3aXpPrJBJ",
+            "label": "individual"
+        }, {
+            "description": "",
+            "family": "Grouping",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-XnxG17JOQRA1L",
+            "label": "pair"
+        }],
+        "stimuli": [{
+            "assetId": "ByDFvytrBhkoUBmcVEikKSKqHeX-bbBxkgWR4YN4J",
+            "template": {
+                "version": "1.0.0",
+                "id": "asset"
+            },
+            "label": null
+        }, {
+            "assetId": "ByDFvytrBhkoUBmcVEikKSKqHeX-eo6xk4xOY1gPB",
+            "template": {
+                "version": "1.0.0",
+                "id": "asset"
+            },
+            "label": null
+        }],
+        "metadata": {
+            "actions": {
+                "deleted": {
+                    "date": null,
+                    "userId": null
+                },
+                "published": {
+                    "date": "2017-04-11T12:53:45.205242+0000",
+                    "course": {
+                        "title": "Advanced",
+                        "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                        "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "playlist": {
+                        "title": "Films based on short stories: A review",
+                        "id": "3DJIVvfEeINpIyGiNmsXPfve-VDjWD0e2MP8BB",
+                        "revision": "ff3ad246-645b-11e6-bad2-06af63cbddca"
+                    },
+                    "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                    "unit": {
+                        "title": "Poetry, plays, short stories",
+                        "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                        "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                    }
+                },
+                "modified": {
+                    "date": "2017-04-11T12:53:45.205242+0000",
+                    "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+                },
+                "created": {
+                    "date": "2015-09-22T12:21:33.740667+0000",
+                    "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+                }
+            }
+        },
+        "state": "new",
+        "CEFRStages": [{
+            "description": "",
+            "family": "CEFR Stage",
+            "locale": "en_EN",
+            "attributes": {
+                "category": null,
+                "subcategories": null,
+                "compassId": null,
+                "topic": null,
+                "theme": null,
+                "examples": null,
+                "categories": null
+            },
+            "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+            "label": "C1"
+        }],
+        "suggestedDuration": 45,
+        "availableTools": [],
+        "instructions": "<p>Write a review of a film that is based on a short story.</p>",
+        "revision": "e5d6b5b2-1eb5-11e7-8075-06af63cbddca"
+    }],
+    "CEFRStages": [{
+        "description": "",
+        "family": "CEFR Stage",
+        "locale": "en_EN",
+        "attributes": {
+            "category": null,
+            "subcategories": null,
+            "compassId": null,
+            "topic": null,
+            "theme": null,
+            "examples": null,
+            "categories": null
+        },
+        "id": "G9dCxjCen-P5Ep0LbmbM7yy",
+        "label": "C1"
+    }],
+    "CEFREaqualsTags": [],
+    "compassTags": {
+        "canDoStatements": [],
+        "pronunciationPoints": [],
+        "topics": [],
+        "grammarPoints": [],
+        "functions": []
+    },
+    "metadata": {
+        "actions": {
+            "deleted": {
+                "date": null,
+                "userId": null
+            },
+            "published": {
+                "date": "2017-04-11T12:53:45.232346+0000",
+                "course": {
+                    "title": "Advanced",
+                    "id": "J90ia9CZnuLlf9QIKX-N5VQ5oV2oGdwp",
+                    "revision": "feec6656-645b-11e6-bad2-06af63cbddca"
+                },
+                "userId": "VY3TJzIN0faG-4aDTEbUkXsvaFRBF6VCGduNvTB2SVPcWDT3xTLZhOmt35UgWSQps5WU47hj0F8Q",
+                "order": 2,
+                "unit": {
+                    "title": "Poetry, plays, short stories",
+                    "order": 4,
+                    "id": "aEpS7BIm9fY7-WnLXnvkVYlY5X",
+                    "revision": "ff35864c-645b-11e6-bad2-06af63cbddca"
+                }
+            },
+            "modified": {
+                "date": "2017-04-11T12:53:45.232346+0000",
+                "userId": "VY3TJzIN0faG-R46fwkUYDhoOU2miQghR5sAMUJVUgvCDof5yS1nUrAtBLT1giwEiYdtvPUvoU0vtAks8Z"
+            },
+            "created": {
+                "date": "2015-09-22T12:21:33.852595+0000",
+                "userId": "VY3TJzIN0faG-bW6CmnFj5Cb5iXwfOZUr7T15SMjsZQULRhwxUD4iPLcvasdrFG3Uy7ceAUOZh6VudM"
+            }
+        },
+        "allowedActions": ["playlist_read"]
+    },
+    "recommendedStudyEnvironment": [{
+        "description": "",
+        "attributes": {
+            "category": null,
+            "subcategories": null,
+            "compassId": null,
+            "topic": null,
+            "theme": null,
+            "examples": null,
+            "categories": null
+        },
+        "family": "Study Environment",
+        "id": "G9dCxjCen-BJDOlGP87VARp",
+        "label": "in class",
+        "locale": "en_EN"
+    }],
+    "revision": "e5dad908-1eb5-11e7-8075-06af63cbddca"
+}

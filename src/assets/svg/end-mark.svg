@@ -1,0 +1,13 @@
+<svg width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <path id="a" d="M4 0h22a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z"/>
+    </defs>
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#6C7378" opacity=".6" xlink:href="#a"/>
+        <path fill="#FFF" d="M8 0L3 30H0V0z" mask="url(#b)" opacity=".4"/>
+        <path fill="#FFF" d="M30 26v4H0V20z" mask="url(#b)" opacity=".4"/>
+        <path fill="#FFF" d="M30 0v30H20l6-30z" mask="url(#b)" opacity=".4"/>
+        <path fill="#FFF" d="M0 0h30v4L0 10z" mask="url(#b)" opacity=".4"/>
+</svg>

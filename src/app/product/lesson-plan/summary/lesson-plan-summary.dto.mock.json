@@ -1,0 +1,25 @@
+{
+    "id":"3DJIVvfEeINpIyGiNmsXPfve-AkwaZRjB8eMgm",
+    "course":{
+        "id":"J90ia9CZnuLlf9QIKX-88xl1B7gJjbvy",
+        "title":"Featured lessons",
+        "revision":"ef7a6d6e-bd21-11e8-8857-060e7357503a"
+    },
+    "thumbnailAssetPath":"/assets/media-examples/sample.png",
+    "skills":[
+        "Grammar ",
+        "Reading ",
+        "Listening "
+    ],
+    "cefr": [
+        "B1 ",
+        "B2 "
+    ],
+    "title":"Future Perfect",
+    "description": "This is the playlist description. This is the playlist description. This is the playlist description",
+    "unit":{
+        "id":"aEpS7BIm9fY7-VByvoVrjOPNQ5",
+        "title":"18 August 2017",
+        "revision":"ef7c7e38-bd21-11e8-8857-060e7357503a"
+    }
+}

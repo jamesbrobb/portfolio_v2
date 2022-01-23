@@ -1,0 +1,56 @@
+<svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="classbot-happy-path-1" x="0" y="0" width="19.9600798" height="20" rx="2.5"></rect>
+        <polygon id="classbot-happy-path-3" points="-2.82094717 -1.109e-13 3.90769834 1.31181184 0.0619788437 21.155252 -6.66666667 19.8434401"></polygon>
+        <filter x="-14.2%" y="-7.1%" width="128.4%" height="114.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.299139493 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="classbot-happy-path-5" points="-1.99172836 -4.36001596 20.5885353 -3.62512966 20.5885353 2.99596409 -2.15621907 2.99596409"></polygon>
+        <filter x="-6.4%" y="-13.6%" width="112.7%" height="127.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="classbot-happy-path-7" points="-3.77831861 13.75 22.1545507 19.0418169 20.5162027 27.11854 -5.41666667 21.8267232"></polygon>
+        <filter x="-5.4%" y="-11.2%" width="110.9%" height="122.4%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.195538949 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="classbot-happy-path-9" points="19.6790528 0.416666667 26.8282387 1.81046675 22.9825192 21.6539069 15.8333333 20.2601068"></polygon>
+        <filter x="-13.6%" y="-7.1%" width="127.3%" height="114.1%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.201030344 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+
+    <mask id="classbot-happy-mask-2" fill="white">
+        <use xlink:href="#classbot-happy-path-1"></use>
+    </mask>
+
+        <use id="classbot-happy-mask-1" fill="#333E47" xlink:href="#classbot-happy-path-1"></use>
+        <g id="rectangle-top-dark-blue" mask="url(#classbot-happy-mask-2)">
+            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#classbot-happy-path-3"></use>
+            <use fill="#2D5A7A" fill-rule="evenodd" xlink:href="#classbot-happy-path-3"></use>
+        </g>
+        <g id="rectangle-top-blue" mask="url(#classbot-happy-mask-2)">
+            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#classbot-happy-path-5"></use>
+            <use fill="#4B96CC" fill-rule="evenodd" transform="translate(0,2) rotate(-10 0 0)" xlink:href="#classbot-happy-path-5"></use>
+        </g>
+        <g id="rectangle-bottom-red" mask="url(#classbot-happy-mask-2)">
+            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#classbot-happy-path-7"></use>
+            <use fill="#D75049" fill-rule="evenodd" xlink:href="#classbot-happy-path-7"></use>
+        </g>
+        <g id="rectangle-right-green" mask="url(#classbot-happy-mask-2)">
+            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#classbot-happy-path-9"></use>
+            <use fill="#43A874" fill-rule="evenodd" xlink:href="#classbot-happy-path-9"></use>
+        </g>
+
+        <path d="M12.5,11 C11.6666667,13.6666667 8.33333333,13.6666667 7.5,11 C10.5,11 11.5,11 12.5,11 Z" id="smily-mouth" stroke="#FFFFFF" stroke-width="0.766283525" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+        <circle id="left-eye" fill="#FFFFFF" cx="7" cy="8" r="1"></circle>
+        <circle id="right-eye" fill="#FFFFFF" cx="13" cy="8" r="1"></circle>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+@mixin prevent-text-break-out {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+@mixin single-line-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin multi-line-ellipsis($lines: 2) {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+  }
+}

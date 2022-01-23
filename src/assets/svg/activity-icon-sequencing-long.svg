@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1025 768" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect id="Rectangle" fill="#EDF4FA" x="0" y="0" width="1024" height="768"></rect>
+    <path d="M166,269 L859,269 L859,211.003487 C859,209.898985 858.100895,209 856.993938,209 L168.006062,209 C166.895111,209 166,209.895269 166,211.003487 L166,269 Z" id="input" stroke="#536777" stroke-width="4" fill="#FFFFFF"></path>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="164" y="161" width="210" height="26" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="204" y="229" width="214" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="438" y="229" width="304" height="20" rx="2"></rect>
+    <path d="M166,407 L166,467 L859,467 L859,407 L166,407 Z" id="input" stroke="#536777" stroke-width="4" fill="#FFFFFF"></path>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="204" y="427" width="214" height="20" rx="2"></rect>
+    <path d="M166,607 L166,664.996513 C166,666.101015 166.899105,667 168.006062,667 L856.993938,667 C858.104889,667 859,666.104731 859,664.996513 L859,607 L166,607 Z" id="input" stroke="#536777" stroke-width="4" fill="#FFFFFF"></path>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="204" y="627" width="214" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="438" y="627" width="254" height="20" rx="2"></rect>
+    <path d="M166,269 L166,407 L859,407 L859,269 L166,269 Z" id="input" stroke="#536777" stroke-width="4" fill="#FFFFFF"></path>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="204" y="289" width="114" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="622" y="289" width="114" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="338" y="289" width="264" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="204" y="369" width="170" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="394" y="369" width="254" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="204" y="329" width="364" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="588" y="329" width="194" height="20" rx="2"></rect>
+    <path d="M166,467 L166,607 L859,607 L859,467 L166,467 Z" id="input" stroke="#536777" stroke-width="4" fill="#FFFFFF"></path>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="204" y="487" width="114" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="622" y="487" width="114" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="338" y="487" width="264" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="204" y="567" width="170" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="394" y="567" width="119" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="204" y="527" width="244" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="468" y="527" width="194" height="20" rx="2"></rect>
+    <rect id="text-skeleton" fill-opacity="0.25" fill="#536777" x="682" y="527" width="139" height="20" rx="2"></rect>
+    <rect id="Header" fill="#203344" x="1" y="0" width="1024" height="64"></rect>
+</svg>

@@ -1,0 +1,13 @@
+@mixin button_reset {
+  display: block;
+  font-family: unset;
+  font-size: unset;
+  font-weight: unset;
+  text-align: unset;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
