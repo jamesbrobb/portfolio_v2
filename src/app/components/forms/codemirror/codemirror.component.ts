@@ -1,12 +1,12 @@
 import {
-    Component,
-    ElementRef,
-    EventEmitter,
-    Input,
-    OnChanges,
-    OnInit,
-    Output,
-    ViewChild,
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input, NgModule,
+  OnChanges,
+  OnInit,
+  Output,
+  ViewChild,
 } from '@angular/core';
 
 import * as CodeMirror from 'codemirror';
@@ -14,6 +14,7 @@ import 'codemirror/mode/javascript/javascript';
 import 'codemirror/addon/edit/closebrackets';
 import 'codemirror/addon/edit/matchbrackets';
 import 'codemirror/addon/display/autorefresh'
+import {CommonModule} from "@angular/common";
 
 
 
@@ -68,5 +69,14 @@ export class CodemirrorComponent implements OnInit, OnChanges {
 
         this.onChange.emit(this._codeMirror?.getValue());
     }
-
 }
+
+
+@NgModule({
+  imports: [
+    CommonModule
+  ],
+  declarations: [CodemirrorComponent],
+  exports: [CodemirrorComponent]
+})
+export class CodemirrorComponentModule {}

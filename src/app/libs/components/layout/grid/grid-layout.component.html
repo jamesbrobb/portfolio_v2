@@ -1,0 +1,11 @@
+<div class="grid-layout" responsiveContainer>
+
+  <div class="grid-layout-item" *ngFor="let item of dataProvider; trackBy: trackById">
+
+    <ng-template [ngTemplateOutletContext]="{item: item}"
+         [ngTemplateOutlet]="itemTemplate">
+    </ng-template>
+
+  </div>
+
+</div>

@@ -2,8 +2,9 @@ import {CommonModule} from "@angular/common";
 import {NgModule} from "@angular/core";
 import {RootRouteComponent} from "./root/root.route.component";
 import {ComponentsModule} from "../components/components.module";
-import {DynamicComponentModule} from "../dynamic-component/dynamic-component.module";
 import {ExamplesModule} from "../examples/examples.module";
+import {ControlsLoaderModule} from "../components/controls/controls-loader.module";
+import {DynamicComponentModule} from "../dynamic-component/dynamic-component.module";
 
 
 const COMPONENTS = [
@@ -15,8 +16,9 @@ const COMPONENTS = [
   imports: [
     CommonModule,
     ComponentsModule,
-    DynamicComponentModule,
-    ExamplesModule
+    ExamplesModule,
+    ControlsLoaderModule,
+    DynamicComponentModule
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

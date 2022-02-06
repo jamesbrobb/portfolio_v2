@@ -1,7 +1,16 @@
-import {Component, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output} from '@angular/core';
-import {ControlGroup} from "../../route/config/route-config";
-import {FormControl, FormGroup} from "@angular/forms";
 import {Subscription} from "rxjs";
+import {CommonModule} from "@angular/common";
+import {Component, EventEmitter, Input, NgModule, OnChanges, OnDestroy, Output} from '@angular/core';
+import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
+import {ControlGroup} from "../../route/config/route-config";
+import {JsonEditorComponentModule} from "../forms/json-editor/json-editor.component";
+
+
+
+export interface ControlComponentIO {
+  controls?: ControlGroup[];
+  dataChange: EventEmitter<unknown>;
+}
 
 
 
@@ -10,10 +19,11 @@ import {Subscription} from "rxjs";
   templateUrl: './controls.component.html',
   styleUrls: ['./controls.component.scss']
 })
-export class ControlsComponent implements OnChanges, OnDestroy {
+export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestroy {
 
-  @Input() controls!: ControlGroup[];
-  @Output() dataChange = new EventEmitter();
+  @Input() controls?: ControlGroup[];
+
+  @Output() dataChange = new EventEmitter<unknown>();
 
   public form!: FormGroup;
 
@@ -38,6 +48,10 @@ export class ControlsComponent implements OnChanges, OnDestroy {
 
   private _createFormGroup(): void {
 
+    if(!this.controls) {
+      return;
+    }
+
     const controls: {[key: string]: FormControl} = {};
 
     this.controls.forEach((control) => {
@@ -48,3 +62,15 @@ export class ControlsComponent implements OnChanges, OnDestroy {
     this._formSubscription = this.form.valueChanges.subscribe((value) => this._formValueChange(value))
   }
 }
+
+
+@NgModule({
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    JsonEditorComponentModule
+  ],
+  declarations: [ControlsComponent],
+  exports: [ControlsComponent]
+})
+export class ControlsModule {}

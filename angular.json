@@ -33,6 +33,10 @@
                 "glob": "**/*.md",
                 "input": "src/app/",
                 "output": "/assets/docs/"
+              }, {
+                "glob": "**/*.md",
+                "input": "details/",
+                "output": "/assets/docs/details/"
               }
             ],
             "styles": [

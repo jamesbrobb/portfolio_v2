@@ -1,61 +1,81 @@
 import {
-  Compiler,
-  ComponentRef,
-  Injectable,
+  createNgModuleRef,
+  InjectionToken,
   Injector,
-  NgModuleFactory,
+  NgModuleRef,
+  Type
 } from "@angular/core";
 
-import {BaseDynamicComponentModule} from "./base-dynamic-component-module";
+import {StringUtils} from "../libs/core";
 
-export interface DynamicComponent {
-  data: {[key: string]:any};
+
+
+export abstract class BaseDynamicModule {
+  static readonly COMPONENT: Type<unknown>;
+  static readonly MODULE: Type<unknown>;
 }
 
-@Injectable()
+
+export type DynamicComponentModuleMap = {
+  [componentModuleName: string]: () => any
+}
+
+export const DynamicComponentModuleMapService = new InjectionToken<DynamicComponentModuleMap>('DynamicComponentModuleMapService');
+
+
+export type DynamicLoadReturnType<T> = {
+  ngModuleRef: NgModuleRef<unknown>,
+  componentType: Type<T>
+}
+
+
 export class DynamicComponentService {
 
+  private _modulesMap: DynamicComponentModuleMap[]
+
   constructor(
-    private _injector: Injector
-  ) {}
-
-  getComponentBySelector(
-    componentSelector: string,
-    moduleLoaderFunction: () => Promise<any>
-  ): Promise<ComponentRef<DynamicComponent>> {
-
-    return this.getModuleFactory(moduleLoaderFunction)
-      .then((moduleFactory) => {
-
-        const module = moduleFactory.create(this._injector);
-        console.log(module.instance instanceof BaseDynamicComponentModule)
-        if (module.instance instanceof BaseDynamicComponentModule) {
-          const compFactory = module.instance.getComponentFactory(componentSelector);
-          return compFactory!.create(module.injector, [], null, module);
-        } else {
-          throw new Error('Module should extend BaseDynamicComponentModule to use "string" based component selector');
-        }
-      }
-    );
+    private _injector: Injector,
+    modulesMap: DynamicComponentModuleMap
+  ) {
+    this._modulesMap = Array.isArray(modulesMap) ? modulesMap : [modulesMap];
   }
 
-  async getModuleFactory(moduleLoaderFunction: () => Promise<NgModuleFactory<any>>) {
+  async loadComponentBySelector<T = unknown>(selector: string): Promise<DynamicLoadReturnType<T>> {
 
-    const ngModuleOrNgModuleFactory = await moduleLoaderFunction();
+    let func!: Function;
 
-    let moduleFactory;
+    this._modulesMap.forEach((map) => {
 
-    if (ngModuleOrNgModuleFactory instanceof NgModuleFactory) {
-      // AOT
-      moduleFactory = ngModuleOrNgModuleFactory;
+      if(!map[selector]) {
+        return;
+      }
 
-    } else {
-      // JIT
-      moduleFactory = await this._injector
-        .get(Compiler)
-        .compileModuleAsync(ngModuleOrNgModuleFactory);
+      func = map[selector];
+    });
+
+    if(!func) {
+      throw new Error(`no module registered for the selector ${selector}`);
     }
 
-    return moduleFactory;
+    const module = await func(),
+      name = `${StringUtils.toPascalCase(selector)}Component`;
+
+    let moduleType: Type<unknown> = module[`${name}Module`],
+      componentType: Type<T>;
+
+    if(moduleType.prototype instanceof BaseDynamicModule) {
+
+      componentType = (moduleType as any).COMPONENT;
+      moduleType = (moduleType as any).MODULE;
+
+    } else {
+
+      componentType = module[name];
+    }
+
+    return {
+      ngModuleRef: createNgModuleRef(moduleType, this._injector),
+      componentType
+    }
   }
 }

@@ -27,9 +27,7 @@ export class RootRouteComponent implements OnInit {
   }
 
   onControlDataChange(data: {[key: string]: any}): void {
-
     this.controlData = data;
-    console.log(data);
   }
 
   private _handlePageConfigChange = (data: Data): void => {

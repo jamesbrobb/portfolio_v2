@@ -7,7 +7,7 @@
     {
       "path": "about",
       "githubLink": "/",
-      "detailsURI": "routeComponents/home/README.md"
+      "docURI": "details/home/README.md"
     }, {
       "path": "components",
       "children": [{
@@ -19,7 +19,7 @@
               {
                 "path": "color",
                 "githubLink": "components/common/overlay/color",
-                "docURI": "/lib-components/common/overlay/color/README.md",
+                "docURI": "/libs/components/common/overlay/color/README.md",
                 "controls": [{
                   "controlType": "select",
                   "key": "color",
@@ -49,9 +49,25 @@
       }, {
         "path": "layout",
         "children": [
-          {"path": "grid"},
-          {"path": "flex-grid"},
-          {"path": "responsive-container"},
+          {
+            "path": "grid",
+            "githubLink": "components/layout/grid",
+            "docURI": "/libs/components/layout/grid/README.md",
+            "examples": [
+              "grid-layout-example"
+            ]
+          },
+          {
+            "path": "flex-grid"
+          },
+          {
+            "path": "responsive-container",
+            "githubLink": "components/responsive",
+            "docURI": "/libs/components/responsive/container/README.md",
+            "examples": [
+              "responsive-container-example"
+            ]
+          },
           {"path": "page-header"}
         ]
       }, {

@@ -6,7 +6,7 @@ import {
     SimpleChanges
 } from '@angular/core';
 
-import {openClose} from "../../animation";
+import {openClose} from "../../libs/animation";
 import {GithubConfig, githubConfigService} from "../../config/github/github-config";
 
 

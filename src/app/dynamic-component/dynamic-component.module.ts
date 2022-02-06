@@ -1,19 +1,15 @@
-import {InjectionToken, NgModule} from "@angular/core";
+import {Injector, NgModule, Type} from "@angular/core";
+
 import {CommonModule} from "@angular/common";
-import {ExampleLoaderComponent} from "./loader/example-loader.component";
-import {ExamplesService} from "./examples-service";
-import {DynamicComponentService} from "./dynamic-component-service";
 
+import {
+  DynamicComponentModuleMap,
+  DynamicComponentModuleMapService,
+  DynamicComponentService
+} from "./dynamic-component-service";
 
-export type DynamicComponentModuleMap = {
-  [componentModuleName: string]: () => any
-}
+import {DynamicLoaderDirective} from "./dynamic-component.directive";
 
-export const DynamicComponentModuleMapService = new InjectionToken<DynamicComponentModuleMap>('DynamicComponentModuleMapService');
-
-const COMPONENTS = [
-  ExampleLoaderComponent
-];
 
 
 @NgModule({
@@ -21,15 +17,16 @@ const COMPONENTS = [
     CommonModule
   ],
   providers: [{
-    provide: ExamplesService,
-    useFactory: (map: DynamicComponentModuleMap) => {
-      return new ExamplesService(map);
+    provide: DynamicComponentService,
+    useFactory: (inj: Injector, map: DynamicComponentModuleMap) => {
+      return new DynamicComponentService(inj, map)
     },
-    deps: [DynamicComponentModuleMapService]
-  },
-    DynamicComponentService
-  ],
-  declarations: COMPONENTS,
-  exports: COMPONENTS
+    deps: [
+      Injector,
+      DynamicComponentModuleMapService
+    ]
+  }],
+  declarations: [DynamicLoaderDirective],
+  exports: [DynamicLoaderDirective]
 })
 export class DynamicComponentModule {}

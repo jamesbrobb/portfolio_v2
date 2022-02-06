@@ -1,0 +1,27 @@
+@import "styles";
+
+
+.mat-menu-panel {
+  .mat-menu-content:not(:empty) {
+    padding: 0;
+
+    .mat-menu-item {
+      color: $palette-dark-blue-700;
+      background-color: $palette-white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12.7px;
+
+      &.destructive {
+        color: $palette-red-500;
+      }
+
+      &:hover:enabled {
+        background-color: $palette-grey-light-100;
+      }
+
+      &:not(:last-child) {
+        border-bottom: solid 1px #dadfe2;
+      }
+    }
+  }
+}

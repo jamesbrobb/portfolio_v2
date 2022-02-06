@@ -1,5 +1,7 @@
-import { Component, Input, Output, EventEmitter, OnChanges  } from '@angular/core';
+import {Component, Input, Output, EventEmitter, OnChanges, NgModule} from '@angular/core';
 import beautify from 'json-beautify';
+import {CommonModule} from "@angular/common";
+import {CodemirrorComponentModule} from "../codemirror/codemirror.component";
 
 
 const config = {
@@ -63,3 +65,13 @@ export class JsonEditorComponent implements OnChanges {
         );
     }
 }
+
+@NgModule({
+  imports: [
+    CommonModule,
+    CodemirrorComponentModule
+  ],
+  declarations: [JsonEditorComponent],
+  exports: [JsonEditorComponent]
+})
+export class JsonEditorComponentModule {}

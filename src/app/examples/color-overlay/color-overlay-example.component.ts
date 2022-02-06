@@ -1,18 +1,17 @@
-import {Component, Input, OnDestroy} from '@angular/core';
+import {NgModule, Component, Input, OnDestroy} from '@angular/core';
 import {CommonModule} from "@angular/common";
-import {ComponentFactoryResolver, NgModule} from "@angular/core";
-import {BaseDynamicComponentModule} from "../../dynamic-component/base-dynamic-component-module";
 
-import {LibComponentsModule} from "../../lib-components/lib-components.module";
+import {ColorOverlayComponentModule} from "../../libs/components/common/overlay/color/color-overlay.component";
 
 
-// THIS FILE IS GENERATED - DO NOT EDIT
+// THIS CODE IS GENERATED - DO NOT EDIT
 @Component({
   selector: 'color-overlay-example',
-  template: `<color-overlay class="overlay"
-  [color]="data['color']"
-  [allowTransition]="data['allowTransition']">
-</color-overlay>`
+  template: `<color-overlay
+  [color]="data.color"
+  [allowTransition]="data.allowTransition">
+</color-overlay>
+`
 })
 export class ColorOverlayExampleComponent implements OnDestroy {
 
@@ -23,21 +22,14 @@ export class ColorOverlayExampleComponent implements OnDestroy {
   }
 }
 
-// THIS FILE IS GENERATED - DO NOT EDIT
+// THIS CODE IS GENERATED - DO NOT EDIT
 @NgModule({
   imports: [
     CommonModule,
-    LibComponentsModule
+    ColorOverlayComponentModule
   ],
   declarations: [
     ColorOverlayExampleComponent
   ]
 })
-export class ColorOverlayExampleModule extends BaseDynamicComponentModule {
-
-  dynamicComponents = [ColorOverlayExampleComponent];
-
-  constructor(componentFactoryResolver: ComponentFactoryResolver) {
-    super(componentFactoryResolver);
-  }
-}
+export class ColorOverlayExampleComponentModule {}

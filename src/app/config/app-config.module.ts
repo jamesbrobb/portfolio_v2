@@ -3,7 +3,7 @@ import {AppConfig} from "./app-config";
 import {RouteConfig, ROUTES_CONFIG_KEY, RoutesConfig} from "../route/config/route-config";
 import {menuConfigFactory, MenuConfigService} from "./menu/menu-config";
 import {CommonModule} from "@angular/common";
-import {AnalyticsActionsService, GAConfigService} from "../ng/core";
+import {AnalyticsActionsService, GAConfigService} from "../libs/ng/core";
 import {githubConfigService} from "./github/github-config";
 
 
