@@ -1,10 +1,15 @@
-import {APP_INITIALIZER, NgModule} from "@angular/core";
+import {APP_INITIALIZER, Inject, NgModule} from "@angular/core";
 import {AppConfig} from "./app-config";
-import {RouteConfig, ROUTES_CONFIG_KEY, RoutesConfig} from "../route/config/route-config";
+import {RouteConfig, ROUTES_CONFIG_KEY, RoutesConfig} from "../route";
 import {menuConfigFactory, MenuConfigService} from "./menu/menu-config";
 import {CommonModule} from "@angular/common";
-import {AnalyticsActionsService, GAConfigService} from "../libs/ng/core";
+
 import {githubConfigService} from "./github/github-config";
+
+import {ControlsOptionsMapService} from "../components/controls/controls.provider";
+import {OVERLAY_COLORS} from "@jbr/components/common/overlay/color/color-overlay.component";
+import {FALLBACK_COLORS} from "@jbr/product/components/media/image/fallback/fallback-image.component";
+import {AnalyticsActionsService, GAConfigService} from "@jbr/ng/core";
 
 
 
@@ -13,6 +18,12 @@ import {githubConfigService} from "./github/github-config";
     CommonModule
   ],
   providers: [{
+    provide: ControlsOptionsMapService,
+    useValue: {
+      OVERLAY_COLORS: Object.values(OVERLAY_COLORS).map(key => ({key, value: key})),
+      FALLBACK_COLORS: Object.values(FALLBACK_COLORS).map(key => ({key, value: key})),
+    }
+  }, {
     provide: githubConfigService,
     useFactory: (appConfig: AppConfig) => {
       return appConfig.getValueByKey<RouteConfig[]>('github-config');

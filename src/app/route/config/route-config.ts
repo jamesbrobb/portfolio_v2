@@ -19,16 +19,19 @@ export type PageConfig = {
   sections?: string[],
 } & RouteNode;
 
+export type ControlGroupOption = {
+  key: string,
+  value: string
+}
+
 export type ControlGroup = {
-  controlType: 'input' | 'select' | 'code-mirror' | 'json-editor',
+  controlType: 'input' | 'select' | 'code-mirror' | 'json-editor' | 'divider' | 'header',
   key: string,
   label: string,
   type?: 'text' | 'email' | 'url' | 'number' | 'checkbox' | 'radio',
   value?: string,
-  options?: [{
-    key: string,
-    value: string
-  }]
+  options?: ControlGroupOption[],
+  optionsId?: string
 };
 
 export const ROUTES_CONFIG_KEY: string = 'routes';

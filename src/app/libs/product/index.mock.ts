@@ -1,3 +1,3 @@
-export * from './tag/index.mock';
-export * from './word-sense/index.mock';
-export * from './lesson-plan/index.mock';
+export * from './core/tag/index.mock';
+export * from './core/word-sense/index.mock';
+export * from './core/lesson-plan/index.mock';

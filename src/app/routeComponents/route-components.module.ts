@@ -1,10 +1,10 @@
 import {CommonModule} from "@angular/common";
-import {NgModule} from "@angular/core";
+import {Inject, NgModule} from "@angular/core";
 import {RootRouteComponent} from "./root/root.route.component";
-import {ComponentsModule} from "../components/components.module";
-import {ExamplesModule} from "../examples/examples.module";
+import {ComponentsModule} from "../components";
+import {ExamplesModule} from "../examples";
 import {ControlsLoaderModule} from "../components/controls/controls-loader.module";
-import {DynamicComponentModule} from "../dynamic-component/dynamic-component.module";
+import {DynamicComponentModule} from "@jbr/components/dynamic/dynamic-component.module";
 
 
 const COMPONENTS = [

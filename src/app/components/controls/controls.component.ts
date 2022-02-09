@@ -1,9 +1,22 @@
-import {Subscription} from "rxjs";
+import {debounceTime, Subject, Subscription, takeUntil} from "rxjs";
 import {CommonModule} from "@angular/common";
-import {Component, EventEmitter, Input, NgModule, OnChanges, OnDestroy, Output} from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Inject,
+  InjectionToken,
+  Input,
+  NgModule,
+  OnChanges,
+  OnDestroy, Optional,
+  Output
+} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
-import {ControlGroup} from "../../route/config/route-config";
-import {JsonEditorComponentModule} from "../forms/json-editor/json-editor.component";
+import {ControlGroup, ControlGroupOption} from "../../route";
+import {JsonEditorComponentModule} from "../forms";
+import {map} from "rxjs/operators";
+import {ControlsOptionsMap, ControlsOptionsMapService} from "./controls.provider";
+
 
 
 
@@ -27,7 +40,24 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
 
   public form!: FormGroup;
 
+  private _optionsMap: ControlsOptionsMap | undefined;
   private _formSubscription: Subscription | undefined;
+  private _destroy$ = new Subject();
+  private _debounce$ = new Subject<{[key: string]: unknown }>();
+
+
+  constructor(@Optional() @Inject(ControlsOptionsMapService) optionsMap?: ControlsOptionsMap) {
+    console.log(optionsMap);
+    this._optionsMap = optionsMap;
+
+    this._debounce$
+      .pipe(
+        takeUntil(this._destroy$),
+        debounceTime(100),
+        map((value) => this._parseValue(value))
+      )
+      .subscribe((value) => this.dataChange.emit(value));
+  }
 
   ngOnChanges(): void {
     this._cleanUp();
@@ -36,10 +66,20 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
 
   ngOnDestroy() {
     this._cleanUp();
+
+    this._destroy$.next('');
+    this._destroy$.complete();
   }
 
-  private _formValueChange(value: unknown): void {
-    this.dataChange.emit(value);
+  private _formValueChange(value: {[key: string]: unknown }, throttle: boolean = true): void {
+
+    if(!throttle) {
+      const val = this._parseValue(value);
+      this.dataChange.emit(val);
+      return;
+    }
+
+    this._debounce$.next(value);
   }
 
   private _cleanUp(): void {
@@ -54,12 +94,39 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
 
     const controls: {[key: string]: FormControl} = {};
 
-    this.controls.forEach((control) => {
-      controls[control.key] = new FormControl(control.value || '')
-    });
+    this.controls
+      .filter((control) => !!control.key)
+      .map((control) => {
+
+        if(control.optionsId) {
+
+          if (this._optionsMap) {
+            control.options = this._optionsMap[control.optionsId] as ControlGroupOption[]
+          }
+        }
+
+        return control;
+      })
+      .forEach((control) => {
+        controls[control.key] = new FormControl(control.value || '')
+      });
 
     this.form = new FormGroup(controls);
-    this._formSubscription = this.form.valueChanges.subscribe((value) => this._formValueChange(value))
+    this._formSubscription = this.form.valueChanges.subscribe((value) => this._formValueChange(value));
+    this._formValueChange(this.form.value, false);
+  }
+
+  private _parseValue(value: {[key: string]: unknown}): {[key: string]: unknown} {
+
+    const res = Object.assign({}, value);
+
+    this.controls?.forEach((control) => {
+      if(control.type === 'number') {
+        res[control.key] = parseInt(value[control.key] as string);
+      }
+    });
+
+    return res;
   }
 }
 
@@ -73,4 +140,4 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
   declarations: [ControlsComponent],
   exports: [ControlsComponent]
 })
-export class ControlsModule {}
+export class ControlsComponentModule {}

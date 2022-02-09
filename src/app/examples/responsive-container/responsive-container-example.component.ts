@@ -1,5 +1,6 @@
-import {NgModule, Component, Input, OnDestroy} from '@angular/core';
-import {ResponsiveContainerDirectiveModule} from "../../libs/components/responsive/container/responsive-container.directive";
+import {NgModule, Component} from '@angular/core';
+import {ResponsiveContainerDirectiveModule} from "@jbr/components/responsive/container/responsive-container.directive";
+
 
 
 // THIS CODE IS GENERATED - DO NOT EDIT
@@ -10,14 +11,7 @@ import {ResponsiveContainerDirectiveModule} from "../../libs/components/responsi
 `,
   styleUrls: ['./responsive-container-example.scss']
 })
-export class ResponsiveContainerExampleComponent implements OnDestroy {
-
-  @Input() data: any;
-
-  ngOnDestroy() {
-    console.log('ResponsiveContainerExampleComponent::ngOnDestroy')
-  }
-}
+export class ResponsiveContainerExampleComponent {}
 
 // THIS CODE IS GENERATED - DO NOT EDIT
 @NgModule({

@@ -14,8 +14,9 @@ import {AppContainerComponent} from "./app-container/app-container.component";
 import {PageContainerComponent} from "./page-container/page-container.component";
 import {SideMenuComponent} from "./side-menu/side-menu.component";
 import {MarkdownModule} from "ngx-markdown";
-import {AnalyticsModule} from "../libs/ng/core";
-import {IconsModule} from "../libs/components/common/icons";
+import {AnalyticsModule} from "@jbr/ng/core";
+import {IconsModule} from "@jbr/components/common/icons";
+
 
 const COMPONENTS = [
   AppContainerComponent,

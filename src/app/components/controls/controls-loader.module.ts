@@ -8,19 +8,16 @@ import {
 
 import {takeUntil} from "rxjs";
 
-import {
-  DynamicComponentModuleMapService,
-  DynamicComponentModule,
-  DynamicDirectiveBase
-} from "../../dynamic-component";
-
-import {ControlGroup} from "../../route/config/route-config";
+import {ControlGroup} from "../../route";
 import {ControlComponentIO, ControlsComponent} from "./controls.component";
+import {DynamicDirectiveBase} from "@jbr/components/dynamic/dynamic-directive-base";
+import {DynamicComponentModule} from "@jbr/components/dynamic/dynamic-component.module";
+import {DynamicComponentModuleMapService} from "@jbr/components/dynamic/dynamic-component-service";
 
 
 
 @Directive({
-  selector: '[controlsLoaderDirective]'
+  selector: '[controlsLoader]'
 })
 export class ControlsLoaderDirective extends DynamicDirectiveBase<ControlsComponent> implements ControlComponentIO {
 

@@ -1,16 +1,17 @@
 import {NgModule} from "@angular/core";
-import {ControlsComponent, ControlsModule} from "./controls.component";
-import {BaseDynamicModule} from "../../dynamic-component";
+
+import {BaseDynamicModule} from "@jbr/components/dynamic/dynamic-component-service";
+import {ControlsComponent, ControlsComponentModule} from "./controls.component";
 
 
 
 @NgModule({
   imports: [
-    ControlsModule
+    ControlsComponentModule
   ]
 })
 export class ControlsDynamicComponentModule extends BaseDynamicModule {
   static override readonly COMPONENT = ControlsComponent;
-  static override readonly MODULE = ControlsModule;
+  static override readonly MODULE = ControlsComponentModule;
 }
 

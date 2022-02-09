@@ -21,7 +21,15 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@jbr/animation/*": ["src/app/libs/animation/*"],
+      "@jbr/components/*": ["src/app/libs/components/*"],
+      "@jbr/components/mocks": ["src/app/libs/components/index.mocks"],
+      "@jbr/core/*": ["src/app/libs/core/*"],
+      "@jbr/ng/*": ["src/app/libs/ng/*"],
+      "@jbr/product/*": ["src/app/libs/product/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

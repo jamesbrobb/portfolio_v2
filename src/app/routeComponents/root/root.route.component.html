@@ -6,7 +6,8 @@
 
   <ng-container section="controls" *ngIf="pageConfig.controls">
 
-    <ng-container [dynamicLoader]="'controls-dynamic'" controlsLoaderDirective
+    <ng-container [dynamicLoader]="'controls-dynamic'"
+                  controlsLoader
                   [controls]="pageConfig.controls"
                   (dataChange)="onControlDataChange($event)">
     </ng-container>
@@ -16,7 +17,12 @@
   <ng-container *ngIf="pageConfig.examples">
 
     <ng-container *ngFor="let example of pageConfig.examples">
-      <example-loader-component [selector]="example" [data]="controlData"></example-loader-component>
+
+      <ng-container [dynamicLoader]="example"
+                    exampleLoader
+                    [data]="controlData">
+      </ng-container>
+
     </ng-container>
 
   </ng-container>

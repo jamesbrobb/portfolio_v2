@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Data} from "@angular/router";
-import {PageConfig} from "../../route/config/route-config";
+import {PageConfig} from "../../route";
 
 
 
@@ -28,6 +28,7 @@ export class RootRouteComponent implements OnInit {
 
   onControlDataChange(data: {[key: string]: any}): void {
     this.controlData = data;
+    console.log('onControlDataChange', this.controlData);
   }
 
   private _handlePageConfigChange = (data: Data): void => {

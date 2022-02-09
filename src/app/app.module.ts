@@ -2,16 +2,17 @@ import {NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './route/app-routing.module';
+import { AppRoutingModule } from './route';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ComponentsModule } from "./components/components.module";
+import { ComponentsModule } from "./components";
 import { AppConfigModule } from "./config/app-config.module";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {MarkdownModule} from "ngx-markdown";
-import {AnalyticsModule, GoogleAnalyticsModule} from "./libs/ng/core";
-import {SvgModule} from "./libs/components/common/svg";
-import {IconsModule} from "./libs/components/common/icons";
+import {IconsModule} from "@jbr/components/common/icons";
+import {SvgModule} from "@jbr/components/common/svg";
 
+
+import {AnalyticsModule, GoogleAnalyticsModule} from "@jbr/ng/core";
 import {environment} from "../environments/environment";
 
 

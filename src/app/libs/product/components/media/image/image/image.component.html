@@ -1,0 +1,10 @@
+<div class="image-component" [ngClass]="{blur: blur}">
+
+    <fallback-image class="fallback"
+        [seed]="fallbackSeed"
+        [color]="fallbackColor">
+    </fallback-image>
+
+    <img *ngIf="url" [src]="url">
+
+</div>

@@ -1,0 +1,31 @@
+
+<section class="page-header" responsiveContainer>
+
+    <image-component class="image"
+        [url]="imageUrl"
+        [fallbackSeed]="fallbackSeed"
+        [fallbackColor]="fallbackColor"
+        [size]="imageSize">
+    </image-component>
+
+    <color-overlay class="overlay"
+        [color]="overlayColor">
+    </color-overlay>
+
+    <div class="content">
+
+        <div class="top-slot">
+            <ng-content select=".page-header-top-slot"></ng-content>
+        </div>
+
+        <div class="title-container" *ngIf="title">
+            <span class="title">{{title}}</span>
+        </div>
+
+        <div class="content-slot">
+            <ng-content select=".page-header-content-slot"></ng-content>
+        </div>
+
+    </div>
+
+</section>

@@ -25,13 +25,7 @@
                   "key": "color",
                   "label": "Color",
                   "value": "blue",
-                  "options": [
-                    {"key": "blue", "value": "Blue"},
-                    {"key": "pink", "value": "Pink"},
-                    {"key": "green", "value": "Green"},
-                    {"key": "grey", "value": "Grey"},
-                    {"key": "red", "value": "Red"}
-                  ]
+                  "optionsId": "OVERLAY_COLORS"
                 }, {
                   "controlType": "input",
                   "key": "allow-transition",
@@ -67,8 +61,69 @@
             "examples": [
               "responsive-container-example"
             ]
-          },
-          {"path": "page-header"}
+          }, {
+            "path": "page-header",
+            "detailsURI": "details/page-header/README.md",
+            "docURI": "/libs/product/components/layout/headers/page/README.md",
+            "controls": [{
+              "controlType": "header",
+              "label": "Inputs"
+            }, {
+              "controlType": "input",
+              "key": "fallbackSeed",
+              "label": "Fallback Seed",
+              "type": "number",
+              "value": "1"
+            }, {
+              "controlType": "select",
+              "key": "fallbackColor",
+              "label": "Fallback Color",
+              "value": "blue",
+              "optionsId": "FALLBACK_COLORS"
+            }, {
+              "controlType": "select",
+              "key": "overlayColor",
+              "label": "Overlay Color",
+              "value": "blue",
+              "optionsId": "OVERLAY_COLORS"
+            }, {
+              "controlType": "select",
+              "key": "imageUrl",
+              "label": "Image Url",
+              "value": "none",
+              "options": [
+                {"key": "none", "value": "None"},
+                {"key": "/assets/media-examples/sample.png", "value": "Image 1"},
+                {"key": "/assets/media-examples/sample_2.png", "value": "Image 2"}
+              ]
+            }, {
+              "controlType": "input",
+              "key": "title",
+              "label": "Title",
+              "type": "text",
+              "value": "Header Title"
+            }, {
+              "controlType": "divider"
+            }, {
+              "controlType": "header",
+              "label": "Content slots"
+            }, {
+              "controlType": "input",
+              "key": "topSlotContentHeight",
+              "label": "Top Slot Content Height",
+              "type": "number",
+              "value": "0"
+            }, {
+              "controlType": "input",
+              "key": "contentSlotContentHeight",
+              "label": "Content Slot Content Height",
+              "type": "number",
+              "value": "0"
+            }],
+            "examples": [
+              "page-header-example"
+            ]
+          }
         ]
       }, {
         "path": "media",

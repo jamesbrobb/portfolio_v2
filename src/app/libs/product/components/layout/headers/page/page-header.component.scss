@@ -1,0 +1,103 @@
+@import "/src/app/libs/styles/styles";
+
+:host {
+    display: block;
+    width: 100%;
+
+    .page-header {
+
+        --LG: 710px;
+
+        --bottom-padding: var(--page-header-bottom-padding, #{$gap-xxl});
+        --top-slot-display: var(--page-header-top-slot-display, none);
+        --top-slot-margin-bottom: var(--page-header-top-slot-margin-bottom, #{$gap-m});
+
+        --horizontal-padding: 22px;
+        --title-font-size: 28px;
+        --content-slot-flex-direction: column;
+        --content-slot-display: flex;
+        --content-slot-empty-display: none;
+        --content-slot-min-height: 0;
+
+        position: relative;
+        width: inherit;
+
+        &.LG {
+            --top-slot-display: var(--page-header-top-slot-display, flex);
+            --horizontal-padding: #{$gap-xxl};
+            --title-font-size: 44px;
+            --content-slot-flex-direction: row;
+            --content-slot-empty-display: var(--content-slot-display);
+            --content-slot-min-height: #{$gap-xl};
+        }
+
+        > .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            padding: $gap-xxl var(--horizontal-padding) var(--bottom-padding);
+
+            color: $palette-white;
+
+            .top-slot {
+                display: var(--top-slot-display);
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 100%;
+                min-height: 30px;
+                margin-bottom: var(--top-slot-margin-bottom);
+            }
+
+            .title-container {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    max-width: 900px;
+                    font-size: var(--title-font-size);
+                    line-height: 1.5;
+                    text-align: center;
+                    color: $palette-white;
+
+                    @include prevent-text-break-out;
+                }
+            }
+
+            .content-slot {
+                display: var(--content-slot-display);
+                flex-direction: var(--content-slot-flex-direction);
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 900px;
+                min-height: var(--content-slot-min-height);
+                margin: 0 auto;
+                margin-top: $gap-m;
+
+                &:empty {
+                    display: var(--content-slot-empty-display);
+                }
+            }
+        }
+    }
+}

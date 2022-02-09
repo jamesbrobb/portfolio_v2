@@ -1,7 +1,6 @@
 import {Component, ContentChild, Input, NgModule, TemplateRef} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {ResponsiveContainerDirectiveModule} from "../../responsive/container/responsive-container.directive";
-import {ResizeObserverService} from "../../responsive/resize-observer.service";
 
 
 

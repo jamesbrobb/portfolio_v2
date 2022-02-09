@@ -1,0 +1,12 @@
+:host {
+  display: block;
+
+  .slot-content {
+    width: 100%;
+    background-color: rgba(#ffffff, 0.2);
+    border-color: rgba(#ffffff, 0.6);
+    border-style: solid;
+    box-sizing: border-box;
+  }
+}
+
