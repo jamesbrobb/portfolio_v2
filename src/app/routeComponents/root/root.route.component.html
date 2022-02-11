@@ -1,32 +1,6 @@
 
 <page-container *ngIf="pageConfig"
-  [detailsURI]="pageConfig.detailsURI"
-  [docURI]="pageConfig.docURI"
-  [githubLink]="pageConfig.githubLink">
-
-  <ng-container section="controls" *ngIf="pageConfig.controls">
-
-    <ng-container [dynamicLoader]="'controls-dynamic'"
-                  controlsLoader
-                  [controls]="pageConfig.controls"
-                  (dataChange)="onControlDataChange($event)">
-    </ng-container>
-
-  </ng-container>
-
-  <ng-container *ngIf="pageConfig.examples">
-
-    <ng-container *ngFor="let example of pageConfig.examples">
-
-      <ng-container [dynamicLoader]="example"
-                    exampleLoader
-                    [data]="controlData">
-      </ng-container>
-
-    </ng-container>
-
-  </ng-container>
-
+  [pageConfig]="pageConfig">
 </page-container>
 
 <div *ngIf="!pageConfig">404</div>

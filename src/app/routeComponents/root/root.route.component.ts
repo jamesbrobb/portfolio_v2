@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Data} from "@angular/router";
-import {PageConfig} from "../../route";
+import {PageConfig} from "../../config/page/page-config";
+import {isPageNode} from "../../route";
 
 
 
@@ -11,8 +12,7 @@ import {PageConfig} from "../../route";
 })
 export class RootRouteComponent implements OnInit {
 
-  public pageConfig!: PageConfig;
-  public controlData: {[key: string]: any} = {};
+  public pageConfig?: PageConfig;
 
   constructor(
     private _route: ActivatedRoute
@@ -22,18 +22,10 @@ export class RootRouteComponent implements OnInit {
     this._route.data.subscribe(this._handlePageConfigChange);
   }
 
-  ngAfterViewInit() {
-    //console.log('ngAfterViewInit', this.app-container)
-  }
-
-  onControlDataChange(data: {[key: string]: any}): void {
-    this.controlData = data;
-    console.log('onControlDataChange', this.controlData);
-  }
-
   private _handlePageConfigChange = (data: Data): void => {
 
-    this.controlData = {};
-    this.pageConfig = data['config'];
+    const config = data['config'];
+
+    this.pageConfig = isPageNode(config) ? config.page : undefined;
   }
 }

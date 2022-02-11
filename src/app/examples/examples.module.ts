@@ -15,7 +15,8 @@ imports:[
       'color-overlay-example': () => import('./color-overlay/color-overlay-example.component'),
       'grid-layout-example': () => import('./grid-layout/grid-layout-example.component'),
       'responsive-container-example': () => import('./responsive-container/responsive-container-example.component'),
-      'page-header-example': () => import('./page-header/page-header-example.component')
+      'page-header-example': () => import('./page-header/page-header-example.component'),
+      'flex-grid-example': () => import('./flex-grid/flex-grid-example.component')
     },
     multi: true
   }],

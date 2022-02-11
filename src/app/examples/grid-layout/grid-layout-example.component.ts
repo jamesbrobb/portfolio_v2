@@ -1,13 +1,12 @@
-import {NgModule, Component, Input, OnDestroy} from '@angular/core';
-import {GridLayoutComponentModule} from "../../libs/components/layout/grid/grid-layout.component";
+import {NgModule, Component, Input, OnDestroy, OnChanges} from '@angular/core';
+import {GridLayoutComponentModule} from "@jbr/components/layout/grid/grid-layout.component";
 
 
 
-// THIS CODE IS GENERATED - DO NOT EDIT
 @Component({
   selector: 'grid-layout-example',
   template: `
-<grid-layout class="grid-layout" [dataProvider]="data.dataProvider">
+<grid-layout class="grid-layout" [dataProvider]="dataProvider">
 
   <ng-template let-item="item">
 
@@ -18,20 +17,26 @@ import {GridLayoutComponentModule} from "../../libs/components/layout/grid/grid-
   </ng-template>
 
 </grid-layout>
-
 `,
   styleUrls: ['./grid-layout-example.scss']
 })
-export class GridLayoutExampleComponent implements OnDestroy {
+export class GridLayoutExampleComponent implements OnChanges {
 
-  @Input() data: any;
+  @Input() set itemCount(arg: number) {
+    this._itemCount = Math.min(Math.max(1, arg), 20);
+  };
 
-  ngOnDestroy() {
-    console.log('GridLayoutExampleComponent::ngOnDestroy')
+  dataProvider: {title: string}[] = [];
+
+  private _itemCount: number = 1;
+
+  ngOnChanges() {
+    this.dataProvider = [];
+    this.dataProvider = Array.from(new Array(this._itemCount)).map((arg, index) => ({title: `Item ${index + 1}`}));
   }
 }
 
-// THIS CODE IS GENERATED - DO NOT EDIT
+
 @NgModule({
   imports: [
     GridLayoutComponentModule

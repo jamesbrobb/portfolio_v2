@@ -4,7 +4,6 @@ import {
   Component,
   EventEmitter,
   Inject,
-  InjectionToken,
   Input,
   NgModule,
   OnChanges,
@@ -12,11 +11,12 @@ import {
   Output
 } from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
-import {ControlGroup, ControlGroupOption} from "../../route";
+import {MatInputModule} from '@angular/material/input';
+
 import {JsonEditorComponentModule} from "../forms";
 import {map} from "rxjs/operators";
 import {ControlsOptionsMap, ControlsOptionsMapService} from "./controls.provider";
-
+import {ControlGroup, ControlGroupOption} from "../../config/controls/controls-config";
 
 
 
@@ -28,7 +28,7 @@ export interface ControlComponentIO {
 
 
 @Component({
-  selector: 'controls',
+  selector: 'div[example-controls]',
   templateUrl: './controls.component.html',
   styleUrls: ['./controls.component.scss']
 })
@@ -134,6 +134,7 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
 @NgModule({
   imports: [
     CommonModule,
+    MatInputModule,
     ReactiveFormsModule,
     JsonEditorComponentModule
   ],

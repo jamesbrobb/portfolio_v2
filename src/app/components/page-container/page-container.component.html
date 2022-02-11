@@ -67,15 +67,26 @@
 
     </section>
 
-    <section class="controls">
+    <section class="controls" *ngIf="controls">
 
-        <ng-content select="[section=controls]"></ng-content>
+      <ng-container [dynamicLoader]="'controls-dynamic'"
+                    controlsLoader
+                    [controls]="controls"
+                    (dataChange)="onControlDataChange($event)">
+      </ng-container>
 
     </section>
 
-    <section class="example">
+    <section class="example" *ngIf="examples">
 
-        <ng-content></ng-content>
+      <ng-container *ngFor="let example of examples">
+
+        <ng-container [dynamicLoader]="example"
+                      exampleLoader
+                      [data]="controlData">
+        </ng-container>
+
+      </ng-container>
 
     </section>
 

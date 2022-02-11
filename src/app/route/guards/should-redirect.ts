@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree} from "@angular/router";
-import {RoutesConfig} from "../config/route-config";
+import {isRedirectNode, RoutesConfig} from "../config/route-config";
 
 
 @Injectable()
@@ -13,12 +13,12 @@ export class ShouldRedirect implements CanActivate {
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree {
 
-    const routeConfig = this._routesConfig.getRouteConfigByPath(state.url);
+    const routeNode = this._routesConfig.getRouteNodeByPath(state.url);
 
-    if(!routeConfig?.redirectTo) {
+    if(!isRedirectNode(routeNode)) {
       return true;
     }
 
-    return this._router.parseUrl(routeConfig.redirectTo);
+    return this._router.parseUrl(routeNode.redirectTo);
   }
 }

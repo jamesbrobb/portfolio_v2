@@ -16,12 +16,18 @@ import {SideMenuComponent} from "./side-menu/side-menu.component";
 import {MarkdownModule} from "ngx-markdown";
 import {AnalyticsModule} from "@jbr/ng/core";
 import {IconsModule} from "@jbr/components/common/icons";
+import {HrefListenerDirective} from "../route/directives/route.directives";
+import {ExamplesModule} from "../examples";
+import {ControlsLoaderModule} from "./controls/controls-loader.module";
+import {DynamicComponentModule} from "@jbr/components/dynamic/dynamic-component.module";
+
 
 
 const COMPONENTS = [
   AppContainerComponent,
   SideMenuComponent,
-  PageContainerComponent
+  PageContainerComponent,
+  HrefListenerDirective
 ]
 
 @NgModule({
@@ -39,7 +45,10 @@ const COMPONENTS = [
     MatSidenavModule,
     MatTooltipModule,
     MatMenuModule,
-    IconsModule
+    IconsModule,
+    ExamplesModule,
+    ControlsLoaderModule,
+    DynamicComponentModule
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

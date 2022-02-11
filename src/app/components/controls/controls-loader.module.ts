@@ -8,11 +8,11 @@ import {
 
 import {takeUntil} from "rxjs";
 
-import {ControlGroup} from "../../route";
 import {ControlComponentIO, ControlsComponent} from "./controls.component";
 import {DynamicDirectiveBase} from "@jbr/components/dynamic/dynamic-directive-base";
 import {DynamicComponentModule} from "@jbr/components/dynamic/dynamic-component.module";
 import {DynamicComponentModuleMapService} from "@jbr/components/dynamic/dynamic-component-service";
+import {ControlGroup} from "../../config/controls/controls-config";
 
 
 

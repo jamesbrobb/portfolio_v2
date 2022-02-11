@@ -20,11 +20,14 @@
                  [formControlName]="control.key"
                  [id]="control.key"
                  [name]="control.key"
-                 [type]="control.type"
-                 [value]="control.value"/>
+                 [type]="control.type || 'text'"
+                 [value]="control.value"
+                 [min]="control.min || 0"
+                 [max]="control.max || 100"/>
 
-          <select [id]="control.key" *ngSwitchCase="'select'" [formControlName]="control.key">
-            <option *ngFor="let opt of control.options" [value]="opt.key">{{opt.value}}</option>
+          <select *ngSwitchCase="'select'" [id]="control.key" [formControlName]="control.key">
+            <option value="">none</option>
+            <option *ngFor="let opt of control.options" [value]="opt.value">{{opt.label || opt.value}}</option>
           </select>
 
         </div>

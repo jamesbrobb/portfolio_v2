@@ -4,12 +4,8 @@ import {RootRouteComponent} from "../routeComponents/root/root.route.component";
 import {RouteComponentsModule} from "../routeComponents/route-components.module";
 import {ShouldRedirect} from "./guards/should-redirect";
 import {GetRouteConfig} from "./resolvers/get-route-config";
-import {HrefListenerDirective} from "./directives/route.directives";
 
 
-const COMPONENTS = [
-  HrefListenerDirective
-]
 
 const ROUTES: Routes = [
   {
@@ -33,8 +29,6 @@ const ROUTES: Routes = [
   providers: [
     ShouldRedirect,
     GetRouteConfig
-  ],
-  declarations: COMPONENTS,
-  exports: COMPONENTS
+  ]
 })
 export class AppRoutingModule { }

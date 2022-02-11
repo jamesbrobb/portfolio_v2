@@ -4,12 +4,13 @@ import {RouteConfig, ROUTES_CONFIG_KEY, RoutesConfig} from "../route";
 import {menuConfigFactory, MenuConfigService} from "./menu/menu-config";
 import {CommonModule} from "@angular/common";
 
-import {githubConfigService} from "./github/github-config";
+import {GithubConfig, githubConfigService} from "./github/github-config";
 
 import {ControlsOptionsMapService} from "../components/controls/controls.provider";
 import {OVERLAY_COLORS} from "@jbr/components/common/overlay/color/color-overlay.component";
 import {FALLBACK_COLORS} from "@jbr/product/components/media/image/fallback/fallback-image.component";
 import {AnalyticsActionsService, GAConfigService} from "@jbr/ng/core";
+import {AnalyticsActions, GaAnalyticsConfig} from "@jbr/core/analytics";
 
 
 
@@ -26,32 +27,32 @@ import {AnalyticsActionsService, GAConfigService} from "@jbr/ng/core";
   }, {
     provide: githubConfigService,
     useFactory: (appConfig: AppConfig) => {
-      return appConfig.getValueByKey<RouteConfig[]>('github-config');
+      return appConfig.getValueByKey<GithubConfig>('github-config');
     },
     deps: [AppConfig]
   }, {
     provide: GAConfigService,
     useFactory: (appConfig: AppConfig) => {
-      return appConfig.getValueByKey<RouteConfig[]>('ga-analytics');
+      return appConfig.getValueByKey<GaAnalyticsConfig>('ga-analytics');
     },
     deps: [AppConfig]
   }, {
     provide: AnalyticsActionsService,
     useFactory: (appConfig: AppConfig) => {
-      return appConfig.getValueByKey<RouteConfig[]>('analytics');
+      return appConfig.getValueByKey<AnalyticsActions>('analytics');
     },
     deps: [AppConfig]
   }, {
     provide: MenuConfigService,
     useFactory: (appConfig: AppConfig) => {
-      let config = appConfig.getValueByKey<RouteConfig[]>(ROUTES_CONFIG_KEY);
+      let config = appConfig.getValueByKey<RouteConfig>(ROUTES_CONFIG_KEY);
       return menuConfigFactory(config);
     },
     deps: [AppConfig]
   }, {
     provide: RoutesConfig,
     useFactory: (appConfig: AppConfig) => {
-      let config = appConfig.getValueByKey<RouteConfig[]>(ROUTES_CONFIG_KEY);
+      let config = appConfig.getValueByKey<RouteConfig>(ROUTES_CONFIG_KEY);
       return new RoutesConfig(config);
     },
     deps: [AppConfig]

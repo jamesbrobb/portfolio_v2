@@ -17,20 +17,35 @@ export class HrefListenerDirective {
     @HostListener('click', ['$event'])
     onClick(event: Event) {
 
-        if(!(event.target instanceof HTMLAnchorElement)) {
-            return;
+        if(!event.target) {
+          return;
         }
 
-        const target: HTMLAnchorElement = event.target;
+        let target: HTMLElement | null = event.target as HTMLElement,
+          el: HTMLAnchorElement | undefined;
+
+        while(!el && target) {
+
+          if(target instanceof HTMLAnchorElement) {
+            el = target;
+            continue;
+          }
+
+          target = target.parentElement;
+        }
+
+        if(!(el instanceof HTMLAnchorElement)) {
+            return;
+        }
 
         event.preventDefault();
         event.stopImmediatePropagation();
 
-        if(target.href.indexOf(origin) === 0) {
-            this._router.navigateByUrl(target.pathname);
+        if(el.href.indexOf(origin) === 0) {
+            this._router.navigateByUrl(el.pathname);
             return;
         }
 
-        window.open(target.href);
+        window.open(el.href);
     }
 }

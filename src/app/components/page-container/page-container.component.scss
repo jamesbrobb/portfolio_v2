@@ -49,7 +49,8 @@
     resize: both;
     overflow: auto;
     max-width: 100%;
-    height: fit-content;
+    height: min-content;
+    min-height: min-content;
     background-color: #424242;
     border: solid 1px rgba(255,255,255,.12);
     padding: 10px;
@@ -107,7 +108,7 @@
         .token.operator,
         .token.entity,
         .token.url,
-        .language-css .token.string,
+        .language-css.token.string,
         .style .token.string {
           background: transparent;
         }

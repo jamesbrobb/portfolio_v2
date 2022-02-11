@@ -1,64 +1,70 @@
+import {PageConfig} from "../../config/page/page-config";
 
 
-export type RouteNode = {
+export type RouteConfig = RouteNode[];
+
+export type RouteNodeBase = {
   path: string,
   label?: string,
-  redirectTo?: string
 }
 
-export type RouteConfig = {
-  children?: (RouteConfig | PageConfig)[]
-} & RouteNode;
+export type RouteNode = RedirectNode | ParentNode | PageNode
 
-export type PageConfig = {
-  detailsURI?: string,
-  docURI?: string,
-  githubLink?: string,
-  controls?: ControlGroup[],
-  examples?: string[],
-  sections?: string[],
-} & RouteNode;
+export type RedirectNode = {
+  redirectTo: string
+} & RouteNodeBase
 
-export type ControlGroupOption = {
-  key: string,
-  value: string
+export function isRedirectNode(node: RouteNode | undefined): node is RedirectNode {
+  return !!node && 'redirectTo' in node;
 }
 
-export type ControlGroup = {
-  controlType: 'input' | 'select' | 'code-mirror' | 'json-editor' | 'divider' | 'header',
-  key: string,
-  label: string,
-  type?: 'text' | 'email' | 'url' | 'number' | 'checkbox' | 'radio',
-  value?: string,
-  options?: ControlGroupOption[],
-  optionsId?: string
-};
+export type ParentNode = {
+  children: (RedirectNode | ParentNode | PageNode)[]
+} & RouteNodeBase;
+
+export function isParentNode(node: RouteNode | undefined): node is ParentNode {
+  return !!node && 'children' in node;
+}
+
+export type PageNode = {
+  page: PageConfig
+} & RouteNodeBase;
+
+export function isPageNode(node: RouteNode | undefined): node is PageNode {
+  return !!node && 'page' in node;
+}
+
+
+
+
+
+
 
 export const ROUTES_CONFIG_KEY: string = 'routes';
 
 export class RoutesConfig {
 
-  constructor(private _config: RouteConfig[]) {}
+  constructor(private _config: RouteConfig) {}
 
   isPathValid(path: string): boolean {
 
-    const routeConfig: RouteConfig | undefined = this.getRouteConfigByPath(path);
+    const routeNode: RouteNode | undefined = this.getRouteNodeByPath(path);
 
-    return !!routeConfig;
+    return !!routeNode;
   }
 
-  getRouteConfigByPath(path: string): RouteConfig | undefined {
+  getRouteNodeByPath(path: string): RouteNode | undefined {
 
     const parts = path === '/' ? [path] : path.split('/').filter(part => !!part);
 
-    let config: RouteConfig[] | undefined = this._config,
-      routeConfig: RouteConfig | undefined;
+    let config: RouteConfig | undefined = this._config,
+      routeNode: RouteNode | undefined;
 
     parts.map(part => {
-      routeConfig = config?.find(rConf => rConf.path === part);
-      config = routeConfig?.children;
+      routeNode = config?.find(rConf => rConf.path === part);
+      config = isParentNode(routeNode) ? routeNode.children : undefined;
     });
 
-    return routeConfig;
+    return routeNode;
   }
 }

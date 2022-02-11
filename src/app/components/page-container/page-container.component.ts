@@ -1,25 +1,9 @@
-import {
-    Component,
-    Inject,
-    Input,
-    OnChanges,
-    SimpleChanges
-} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Inject, Input, OnChanges, SimpleChanges} from '@angular/core';
 
 import {openClose} from "../../libs/animation";
 import {GithubConfig, githubConfigService} from "../../config/github/github-config";
-
-
-interface Section {
-    isOpen: boolean;
-    readonly label: string;
-    readonly docURI: string;
-    readonly githubLink?: string;
-}
-
-
-
-
+import {PageConfig, Section} from "../../config/page/page-config";
+import {ControlGroup} from "../../config/controls/controls-config";
 
 
 
@@ -27,21 +11,23 @@ interface Section {
     selector: 'page-container',
     templateUrl: './page-container.component.html',
     styleUrls: ['./page-container.component.scss'],
+    //changeDetection: ChangeDetectionStrategy.OnPush,
     animations: [openClose]
 })
 export class PageContainerComponent implements OnChanges {
 
-  @Input('detailsURI') ioDetailsURI: string | undefined;
-  @Input('githubLink') ioGithubLink: string | undefined;
-  @Input('docURI') ioDocURI: string | undefined;
-  @Input('sections') ioSections: Section[] | undefined;
+  @Input() pageConfig?: PageConfig;
 
   detailsURI: string | undefined;
   githubLink: string | undefined;
   docURI: string | undefined;
   sections: Section[] | undefined;
+  controls: ControlGroup[] | undefined;
+  examples: string[] | undefined;
+
   hasLoaded: boolean = false;
   hasError: boolean = false;
+  controlData: {[key: string]: any} = {};
 
   private _githubConfig: GithubConfig;
   private _loadCount = 0;
@@ -52,15 +38,18 @@ export class PageContainerComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
 
-    this.detailsURI = this.ioDetailsURI;
-    this.githubLink = this.ioGithubLink;
+    this.controlData = {};
+
+    this.detailsURI = this.pageConfig?.detailsURI;
+    this.githubLink = this.pageConfig?.githubLink;
+    this.docURI = this.pageConfig?.docURI;
+    this.sections = this.pageConfig?.sections;
+    this.controls = this.pageConfig?.controls;
+    this.examples = this.pageConfig?.examples;
 
     this.hasLoaded = false;
     this.hasError = false;
     this._loadCount = 0;
-
-    this.docURI = this.ioDocURI;
-    this.sections = this.ioSections;
   }
 
   onLoad($event: string): void {
@@ -70,6 +59,11 @@ export class PageContainerComponent implements OnChanges {
   onError($event: string): void {
     this._onLoad();
     this.hasError = true;
+  }
+
+  onControlDataChange(data: {[key: string]: any}): void {
+    this.controlData = data;
+    console.log('onControlDataChange', this.controlData);
   }
 
   onGithubLinkSelect(path: string): void {
@@ -87,3 +81,4 @@ export class PageContainerComponent implements OnChanges {
     this.hasLoaded = true;
   }
 }
+

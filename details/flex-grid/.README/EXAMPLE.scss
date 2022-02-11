@@ -1,0 +1,25 @@
+@import "~@styles/flex";
+
+$grid_class_name:'grid-layout';
+$grid_item_class_name:'grid-layout-item';
+$min-column-width: 200px;
+$gap: 10px;
+
+
+:host {
+  display: block;
+  width: 100%;
+
+  @include responsive-flex-grid($grid_class_name, $min-column-width, $gap);
+
+  @include flex-grid($grid_class_name, $grid_item_class_name, $min-column-width, $gap, $gap);
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: #c2185b;
+  }
+}

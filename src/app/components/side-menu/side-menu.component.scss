@@ -21,15 +21,69 @@
     }
   }
 
-  .mat-tree > .mat-tree-node .mat-button {
-    padding-left: 44px;
-  }
-
-  .mat-nested-tree-node div[role=group] {
-    padding-left: 20px;
-  }
-
-  div[role=group] > .mat-tree-node {
-    padding-left: 20px;
+  mat-tree {
+    &> mat-tree-node > .mat-button {
+      padding-left: 37px;
+    }
+    &> mat-nested-tree-node {
+      &> div.mat-tree-node > .mat-button {
+        padding-left: 10px;
+      }
+      &> div[role=group] {
+        &> mat-tree-node > .mat-button {
+          padding-left: 47px;
+        }
+        &> mat-nested-tree-node {
+          &> div.mat-tree-node > .mat-button {
+            padding-left: 20px;
+          }
+          &> div[role=group] {
+            &> mat-tree-node > .mat-button {
+              padding-left: 57px;
+            }
+            &> mat-nested-tree-node {
+              &> div.mat-tree-node > .mat-button {
+                padding-left: 30px;
+              }
+              &> div[role=group] {
+                &> mat-tree-node > .mat-button {
+                  padding-left: 67px;
+                }
+                &> mat-nested-tree-node {
+                  &> div.mat-tree-node > .mat-button {
+                    padding-left: 40px;
+                  }
+                  &> div[role=group] {
+                    &> mat-tree-node > .mat-button {
+                      padding-left: 77px;
+                    }
+                    &> mat-nested-tree-node {
+                      &> div.mat-tree-node > .mat-button {
+                        padding-left: 50px;
+                      }
+                      &> div[role=group] {
+                        &> mat-tree-node > .mat-button {
+                          padding-left: 87px;
+                        }
+                        &> mat-nested-tree-node {
+                          &> div.mat-tree-node > .mat-button {
+                            padding-left: 60px;
+                          }
+                          &> div[role=group] {
+                            &> mat-tree-node > .mat-button {
+                              padding-left: 97px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
