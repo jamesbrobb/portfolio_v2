@@ -3,15 +3,17 @@ import {
   EventEmitter,
   Input,
   NgModule,
-  Output
+  OnInit,
+  Output,
 } from "@angular/core";
 
 import {takeUntil} from "rxjs";
 
-import {ControlComponentIO, ControlsComponent} from "./controls.component";
-import {DynamicDirectiveBase} from "@jbr/components/dynamic/dynamic-directive-base";
 import {DynamicComponentModule} from "@jbr/components/dynamic/dynamic-component.module";
 import {DynamicComponentModuleMapService} from "@jbr/components/dynamic/dynamic-component-service";
+import {DynamicLoaderDirective} from "@jbr/components/dynamic/dynamic-component.directive";
+
+import {ControlComponentIO, ControlsComponent} from "./controls.component";
 import {ControlGroup} from "../../config/controls/controls-config";
 
 
@@ -19,11 +21,15 @@ import {ControlGroup} from "../../config/controls/controls-config";
 @Directive({
   selector: '[controlsLoader]'
 })
-export class ControlsLoaderDirective extends DynamicDirectiveBase<ControlsComponent> implements ControlComponentIO {
+export class ControlsLoaderDirective extends DynamicLoaderDirective<ControlsComponent> implements OnInit, ControlComponentIO {
 
   @Input() controls?: ControlGroup[];
 
   @Output() dataChange = new EventEmitter<any>();
+
+  ngOnInit() {
+    this._setComponentSelector('controls-dynamic');
+  }
 
   protected override _updateInstanceInputValues(): void {
     this._instance!.controls = this.controls;
@@ -35,6 +41,7 @@ export class ControlsLoaderDirective extends DynamicDirectiveBase<ControlsCompon
       .subscribe((arg) => this.dataChange.emit(arg));
   }
 }
+
 
 
 @NgModule({

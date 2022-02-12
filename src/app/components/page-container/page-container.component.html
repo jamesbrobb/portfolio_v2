@@ -69,8 +69,7 @@
 
     <section class="controls" *ngIf="controls">
 
-      <ng-container [dynamicLoader]="'controls-dynamic'"
-                    controlsLoader
+      <ng-container controlsLoader
                     [controls]="controls"
                     (dataChange)="onControlDataChange($event)">
       </ng-container>
@@ -81,8 +80,7 @@
 
       <ng-container *ngFor="let example of examples">
 
-        <ng-container [dynamicLoader]="example"
-                      exampleLoader
+        <ng-container [exampleLoader]="example"
                       [data]="controlData">
         </ng-container>
 

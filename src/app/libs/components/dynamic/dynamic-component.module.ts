@@ -1,4 +1,4 @@
-import {Injector, NgModule, Type} from "@angular/core";
+import {Injector, NgModule} from "@angular/core";
 
 import {CommonModule} from "@angular/common";
 
@@ -8,7 +8,6 @@ import {
   DynamicComponentService
 } from "./dynamic-component-service";
 
-import {DynamicLoaderDirective} from "./dynamic-component.directive";
 
 
 
@@ -25,8 +24,6 @@ import {DynamicLoaderDirective} from "./dynamic-component.directive";
       Injector,
       DynamicComponentModuleMapService
     ]
-  }],
-  declarations: [DynamicLoaderDirective],
-  exports: [DynamicLoaderDirective]
+  }]
 })
 export class DynamicComponentModule {}

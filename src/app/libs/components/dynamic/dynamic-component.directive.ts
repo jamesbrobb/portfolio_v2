@@ -2,9 +2,7 @@ import {Subject} from "rxjs";
 import {
   ComponentRef,
   Directive,
-  Injectable,
   Injector,
-  Input,
   OnChanges,
   OnDestroy,
   ViewContainerRef
@@ -14,26 +12,14 @@ import {DynamicComponentService} from "./dynamic-component-service";
 
 
 
-@Injectable()
-export class DynamicLoaderDirectiveService {
-
-  public instance$ = new Subject();
-
-  updateInstance(arg: unknown): void {
-    this.instance$.next(arg);
-  }
-}
-
 
 @Directive({
-  selector: '[dynamicLoader]',
-  providers: [
-    DynamicLoaderDirectiveService
-  ]
+  selector: '[abstractDynamicLoader]',
 })
-export class DynamicLoaderDirective implements OnChanges, OnDestroy {
+export abstract class DynamicLoaderDirective<T> implements OnChanges, OnDestroy {
 
-  @Input('dynamicLoader') componentSelector?: string;
+  protected _destroyed$ = new Subject();
+  protected _instance?: T;
 
   private _componentSelector?: string;
   private _component?: ComponentRef<unknown>;
@@ -41,25 +27,35 @@ export class DynamicLoaderDirective implements OnChanges, OnDestroy {
   constructor(
     private _container: ViewContainerRef,
     private _injector: Injector,
-    private _componentService: DynamicComponentService,
-    private _service: DynamicLoaderDirectiveService
+    private _componentService: DynamicComponentService
   ) {}
 
   ngOnChanges() {
+    this._updateInstanceInputs();
+  }
 
-    if(this.componentSelector && (this.componentSelector === this._componentSelector)) {
+  ngOnDestroy() {
+
+    this._destroyed$.next('');
+    this._destroyed$.complete();
+
+    this._cleanUp();
+  }
+
+  protected _setComponentSelector(selector: string): void {
+
+    if(this._componentSelector && (this._componentSelector === selector)) {
       return;
     }
 
-    this._componentSelector = this.componentSelector;
+    this._componentSelector = selector;
 
     this._cleanUp();
     this._createComponent();
   }
 
-  ngOnDestroy() {
-    this._cleanUp();
-  }
+  protected abstract _updateInstanceInputValues(): void;
+  protected abstract _setUpInstanceOutputs(): void;
 
   private async _createComponent(): Promise<void> {
 
@@ -71,7 +67,34 @@ export class DynamicLoaderDirective implements OnChanges, OnDestroy {
 
     this._component = this._container.createComponent(componentType, {injector:this._injector, ngModuleRef:ngModuleRef});
 
-    this._service.updateInstance(this._component.instance);
+    this._setUpInstance();
+  }
+
+  private _setUpInstance(): void {
+
+    if (!this._component?.instance) {
+      return;
+    }
+
+    this._instance = this._component.instance as T;
+
+    this._setUpInstanceOutputs();
+    this._updateInstanceInputs();
+  }
+
+  private _updateInstanceInputs(): void {
+
+    if(!this._instance) {
+      return;
+    }
+
+    this._updateInstanceInputValues();
+
+    if(!(this._instance as any).ngOnChanges) {
+      return;
+    }
+
+    ((this._instance as unknown) as OnChanges).ngOnChanges({});
   }
 
   private _cleanUp(): void {

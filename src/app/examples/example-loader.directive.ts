@@ -1,24 +1,35 @@
 import {
   Directive,
   EventEmitter,
-  Input,
+  Input, OnChanges,
   Output
 } from '@angular/core';
 
-import {DynamicDirectiveBase} from "@jbr/components/dynamic/dynamic-directive-base";
-
-
+import {DynamicLoaderDirective} from "@jbr/components/dynamic/dynamic-component.directive";
 
 
 
 @Directive({
   selector: '[exampleLoader]'
 })
-export class ExampleLoaderDirective extends DynamicDirectiveBase<any> {
+export class ExampleLoaderDirective extends DynamicLoaderDirective<any> implements OnChanges {
+
+  @Input('exampleLoader') exampleSelector?: string;
 
   @Input() data: {[key:string]: unknown} = {};
 
   @Output() dataChange = new EventEmitter<any>();
+
+  override ngOnChanges(): void {
+
+    super.ngOnChanges();
+
+    if(!this.exampleSelector) {
+      return;
+    }
+
+    this._setComponentSelector(this.exampleSelector);
+  }
 
   protected override _updateInstanceInputValues(): void {
     console.log('_updateInstanceInputValues', this.data);
@@ -28,7 +39,5 @@ export class ExampleLoaderDirective extends DynamicDirectiveBase<any> {
       })
   }
 
-  protected override _setUpInstanceOutputs(): void {
-
-  }
+  protected override _setUpInstanceOutputs(): void {}
 }
