@@ -12,11 +12,13 @@ imports:[
   providers: [{
     provide: DynamicComponentModuleMapService,
     useValue: {
-      'color-overlay-example': () => import('./color-overlay/color-overlay-example.component'),
+      'color-overlay-dynamic': () => import('@jbr/components/common/overlay/color/color-overlay-dynamic.module'),
       'grid-layout-example': () => import('./grid-layout/grid-layout-example.component'),
       'responsive-container-example': () => import('./responsive-container/responsive-container-example.component'),
       'page-header-example': () => import('./page-header/page-header-example.component'),
-      'flex-grid-example': () => import('./flex-grid/flex-grid-example.component')
+      'flex-grid-example': () => import('./flex-grid/flex-grid-example.component'),
+      'fallback-image-dynamic': () => import('@jbr/product/components/media/image/fallback/fallback-image-dynamic.module'),
+      'image-dynamic': () => import('@jbr/product/components/media/image/image/image-dynamic.module')
     },
     multi: true
   }],

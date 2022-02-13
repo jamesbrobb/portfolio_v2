@@ -10,8 +10,6 @@ import {StringUtils} from "@jbr/core/utils";
 
 
 
-
-
 export abstract class BaseDynamicModule {
   static readonly COMPONENT: Type<unknown>;
   static readonly MODULE: Type<unknown>;

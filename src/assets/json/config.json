@@ -6,64 +6,26 @@
     },
     {
       "path": "about",
-      "page": {
-        "githubLink": "/",
-        "docURI": "details/home/README.md"
-      }
+      "pageId": "about"
     }, {
       "path": "components",
       "children": [{
-        "path": "dynamic-loader"
+        "path": "dynamic-loader",
+        "pageId": "dynamic-loader"
       },{
         "path": "layout",
         "children": [
           {
             "path": "grid",
-            "page": {
-              "githubLink": "components/layout/grid",
-              "docURI": "/libs/components/layout/grid/README.md",
-              "controls": [{
-                "controlType": "input",
-                "key": "itemCount",
-                "label": "Item count",
-                "type": "number",
-                "value": 10,
-                "min": 1,
-                "max": 20
-              }],
-              "examples": [
-                "grid-layout-example"
-              ]
-            }
+            "pageId": "grid"
           },
           {
             "path": "flex-grid",
-            "page": {
-              "githubLink": "styles/flex.scss",
-              "docURI": "details/flex-grid/README.md",
-              "controls": [{
-                "controlType": "input",
-                "key": "itemCount",
-                "label": "Item count",
-                "type": "number",
-                "value": 10,
-                "min": 1,
-                "max": 20
-              }],
-              "examples": [
-                "flex-grid-example"
-              ]
-            }
+            "pageId": "flex-grid"
           },
           {
             "path": "responsive-container",
-            "page": {
-              "githubLink": "components/responsive",
-              "docURI": "/libs/components/responsive/container/README.md",
-              "examples": [
-                "responsive-container-example"
-              ]
-            }
+            "pageId": "responsive-container"
           }
         ]
       }, {
@@ -76,26 +38,7 @@
               "children": [
                 {
                   "path": "color",
-                  "page": {
-                    "githubLink": "components/common/overlay/color",
-                    "docURI": "/libs/components/common/overlay/color/README.md",
-                    "controls": [{
-                      "controlType": "select",
-                      "key": "color",
-                      "label": "Color",
-                      "value": "blue",
-                      "optionsId": "OVERLAY_COLORS"
-                    }, {
-                      "controlType": "input",
-                      "key": "allow-transition",
-                      "label": "Allow Transition",
-                      "type": "checkbox",
-                      "value": "true"
-                    }],
-                    "examples": [
-                      "color-overlay-example"
-                    ]
-                  }
+                  "pageId": "color-overlay"
                 }
               ]
             }
@@ -104,77 +47,20 @@
           "path": "layout",
           "children": [{
             "path": "page-header",
-            "page": {
-              "detailsURI": "details/page-header/README.md",
-              "docURI": "/libs/product/components/layout/headers/page/README.md",
-              "controls": [{
-                "controlType": "header",
-                "label": "Inputs"
-              }, {
-                "controlType": "input",
-                "key": "fallbackSeed",
-                "label": "Fallback Seed",
-                "type": "number",
-                "value": "1"
-              }, {
-                "controlType": "select",
-                "key": "fallbackColor",
-                "label": "Fallback Color",
-                "value": "blue",
-                "optionsId": "FALLBACK_COLORS"
-              }, {
-                "controlType": "select",
-                "key": "overlayColor",
-                "label": "Overlay Color",
-                "value": "blue",
-                "optionsId": "OVERLAY_COLORS"
-              }, {
-                "controlType": "select",
-                "key": "imageUrl",
-                "label": "Image Url",
-                "value": "none",
-                "options": [
-                  {"key": "none", "value": "none"},
-                  {"key": "image-1", "value": "/assets/media-examples/sample.png", "label": "Image 1"},
-                  {"key": "image-2", "value": "/assets/media-examples/sample_2.png", "label": "Image 2"}
-                ]
-              }, {
-                "controlType": "input",
-                "key": "title",
-                "label": "Title",
-                "type": "text",
-                "value": "Header Title"
-              }, {
-                "controlType": "divider"
-              }, {
-                "controlType": "header",
-                "label": "Content slots"
-              }, {
-                "controlType": "input",
-                "key": "topSlotContentHeight",
-                "label": "Top Slot Content Height",
-                "type": "number",
-                "value": "0"
-              }, {
-                "controlType": "input",
-                "key": "contentSlotContentHeight",
-                "label": "Content Slot Content Height",
-                "type": "number",
-                "value": "0"
-              }],
-              "examples": [
-                "page-header-example"
-              ]
-            }
+            "pageId": "page-header"
           }]
         }, {
             "path": "media",
             "children": [
               {
                 "path": "image",
-                "children": [
-                  {"path": "fallback"},
-                  {"path": "image-component"}
+                "children": [{
+                    "path": "fallback",
+                    "pageId": "fallback-image"
+                  }, {
+                    "path": "image-component",
+                    "pageId": "image"
+                  }
                 ]
               }
             ]
@@ -199,56 +85,242 @@
       "path": "core",
       "children": [{
         "path": "analytics",
-        "page": {
-          "detailsURI": "details/analytics/README.md",
-          "docURI": "libs/core/analytics/README.md",
-          "githubLink": "libs/core/analytics",
-          "sections": [{
-            "label": "Analytics NgModule",
-            "isOpen": false,
-            "docURI": "libs/ng/core/analytics/README.md",
-            "githubLink": "libs/ng/core/analytics/analytics.module.ts"
-          }]
-        }
+        "pageId": "analytics"
       }, {
         "path": "commands",
-        "page": {
-          "detailsURI": "details/commands/README.md",
-          "docURI": "libs/core/commands/README.md",
-          "githubLink": "core/commands",
-          "sections": [{
-            "label": "Command",
-            "isOpen": false,
-            "docURI": "libs/core/commands/command/README.md",
-            "githubLink": "libs/core/commands/command/command.ts"
-          }, {
-            "label": "Group",
-            "isOpen": false,
-            "docURI": "libs/core/commands/group/README.md",
-            "githubLink": "libs/core/commands/group/command-group.ts"
-          }, {
-            "label": "Processor",
-            "isOpen": false,
-            "docURI": "libs/core/commands/processor/README.md",
-            "githubLink": "libs/core/commands/processor/command-processor.ts"
-          }]
-        }
+        "pageId": "commands"
       }, {
         "path": "http",
-        "page": {
-          "detailsURI": "details/http/README.md",
-          "docURI": "libs/core/http/README.md",
-          "githubLink": "libs/core/http",
-          "sections": [{
-            "label": "Http NgModule",
-            "isOpen": false,
-            "docURI": "libs/ng/core/http/README.md",
-            "githubLink": "libs/ng/core/http/http.module.ts"
-          }]
-        }
+        "pageId": "http"
       }]
     }
   ],
+  "pages": {
+    "about": {
+      "githubLink": "/",
+      "docURI": "details/home/README.md"
+    },
+    "dynamic-loader": {
+      "githubLink": "libs/components/dynamic",
+      "docURI": "/libs/components/dynamic/README.md"
+    },
+    "grid": {
+      "githubLink": "components/layout/grid",
+      "docURI": "/libs/components/layout/grid/README.md",
+      "controls": [{
+        "controlType": "input",
+        "key": "itemCount",
+        "label": "Item count",
+        "type": "number",
+        "value": 10,
+        "min": 1,
+        "max": 20
+      }],
+      "examples": [
+        "grid-layout-example"
+      ]
+    },
+    "flex-grid": {
+      "githubLink": "styles/flex.scss",
+      "docURI": "details/flex-grid/README.md",
+      "controls": [{
+        "controlType": "input",
+        "key": "itemCount",
+        "label": "Item count",
+        "type": "number",
+        "value": 10,
+        "min": 1,
+        "max": 20
+      }],
+      "examples": [
+        "flex-grid-example"
+      ]
+    },
+    "responsive-container": {
+      "githubLink": "components/responsive",
+      "docURI": "/libs/components/responsive/container/README.md",
+      "examples": [
+        "responsive-container-example"
+      ]
+    },
+    "color-overlay": {
+      "githubLink": "components/common/overlay/color",
+      "docURI": "/libs/components/common/overlay/color/README.md",
+      "controls": [{
+        "controlType": "select",
+        "key": "color",
+        "label": "Color",
+        "value": "blue",
+        "optionsId": "OVERLAY_COLORS"
+      }, {
+        "controlType": "input",
+        "key": "allow-transition",
+        "label": "Allow Transition",
+        "type": "checkbox",
+        "value": "true"
+      }],
+      "examples": [
+        "color-overlay-dynamic"
+      ]
+    },
+    "page-header": {
+      "detailsURI": "details/page-header/README.md",
+      "docURI": "/libs/product/components/layout/headers/page/README.md",
+      "controls": [{
+        "controlType": "header",
+        "label": "Inputs"
+      }, {
+        "controlType": "input",
+        "key": "fallbackSeed",
+        "label": "Fallback Seed",
+        "type": "number",
+        "value": 1,
+        "min": 1,
+        "max": 4
+      }, {
+        "controlType": "select",
+        "key": "fallbackColor",
+        "label": "Fallback Color",
+        "value": "blue",
+        "optionsId": "FALLBACK_COLORS"
+      }, {
+        "controlType": "select",
+        "key": "overlayColor",
+        "label": "Overlay Color",
+        "value": "blue",
+        "optionsId": "OVERLAY_COLORS"
+      }, {
+        "controlType": "select",
+        "key": "imageUrl",
+        "label": "Image Url",
+        "value": "image-1",
+        "optionsId": "IMAGE_URLS"
+      }, {
+        "controlType": "input",
+        "key": "title",
+        "label": "Title",
+        "type": "text",
+        "value": "Header Title"
+      }, {
+        "controlType": "divider"
+      }, {
+        "controlType": "header",
+        "label": "Content slots"
+      }, {
+        "controlType": "input",
+        "key": "topSlotContentHeight",
+        "label": "Top Slot Content Height",
+        "type": "number",
+        "value": "0"
+      }, {
+        "controlType": "input",
+        "key": "contentSlotContentHeight",
+        "label": "Content Slot Content Height",
+        "type": "number",
+        "value": "0"
+      }],
+      "examples": [
+        "page-header-example"
+      ]
+    },
+    "fallback-image": {
+      "docURI": "/libs/product/components/media/image/fallback/README.md",
+      "controls": [{
+        "controlType": "input",
+        "key": "seed",
+        "label": "Seed",
+        "type": "number",
+        "value": 1,
+        "min": 1,
+        "max": 4
+      }, {
+        "controlType": "select",
+        "key": "color",
+        "label": "Color",
+        "value": "blue",
+        "optionsId": "FALLBACK_COLORS"
+      }],
+      "examples": [
+        "fallback-image-dynamic"
+      ]
+    },
+    "image": {
+      "docURI": "/libs/product/components/media/image/image/README.md",
+      "controls": [{
+        "controlType": "input",
+        "key": "fallbackSeed",
+        "label": "Fallback Seed",
+        "type": "number",
+        "value": 1,
+        "min": 1,
+        "max": 4
+      }, {
+        "controlType": "select",
+        "key": "fallbackColor",
+        "label": "Fallback Color",
+        "value": "blue",
+        "optionsId": "FALLBACK_COLORS"
+      }, {
+        "controlType": "select",
+        "key": "url",
+        "label": "Image Url",
+        "value": "image-1",
+        "optionsId": "IMAGE_URLS"
+      }, {
+        "controlType": "input",
+        "key": "blur",
+        "label": "Apply blur",
+        "type": "checkbox",
+        "value": "true"
+      }],
+      "examples": [
+        "image-dynamic"
+      ]
+    },
+    "analytics": {
+      "detailsURI": "details/analytics/README.md",
+      "docURI": "libs/core/analytics/README.md",
+      "githubLink": "libs/core/analytics",
+      "sections": [{
+        "label": "Analytics NgModule",
+        "isOpen": false,
+        "docURI": "libs/ng/core/analytics/README.md",
+        "githubLink": "libs/ng/core/analytics/analytics.module.ts"
+      }]
+    },
+    "commands": {
+      "detailsURI": "details/commands/README.md",
+      "docURI": "libs/core/commands/README.md",
+      "githubLink": "core/commands",
+      "sections": [{
+        "label": "Command",
+        "isOpen": false,
+        "docURI": "libs/core/commands/command/README.md",
+        "githubLink": "libs/core/commands/command/command.ts"
+      }, {
+        "label": "Group",
+        "isOpen": false,
+        "docURI": "libs/core/commands/group/README.md",
+        "githubLink": "libs/core/commands/group/command-group.ts"
+      }, {
+        "label": "Processor",
+        "isOpen": false,
+        "docURI": "libs/core/commands/processor/README.md",
+        "githubLink": "libs/core/commands/processor/command-processor.ts"
+      }]
+    },
+    "http": {
+      "detailsURI": "details/http/README.md",
+      "docURI": "libs/core/http/README.md",
+      "githubLink": "libs/core/http",
+      "sections": [{
+        "label": "Http NgModule",
+        "isOpen": false,
+        "docURI": "libs/ng/core/http/README.md",
+        "githubLink": "libs/ng/core/http/http.module.ts"
+      }]
+    }
+  },
   "ga-analytics": {
     "trackerId": "G-EJZC3TV0QZ",
     "trackerName": "",

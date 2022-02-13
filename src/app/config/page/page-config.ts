@@ -16,3 +16,17 @@ export type PageConfig = {
   examples?: string[],
   sections?: Section[]
 }
+
+export type PagesConfigMap = {[pageId: string]: PageConfig};
+
+
+export const PAGES_CONFIG_KEY: string = 'pages';
+
+export class PagesConfig {
+
+  constructor(private _pagesConfig: PagesConfigMap) {}
+
+  getPageConfigById(id: string): PageConfig | undefined {
+    return this._pagesConfig[id];
+  }
+ }

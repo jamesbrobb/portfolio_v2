@@ -11,6 +11,7 @@ import {OVERLAY_COLORS} from "@jbr/components/common/overlay/color/color-overlay
 import {FALLBACK_COLORS} from "@jbr/product/components/media/image/fallback/fallback-image.component";
 import {AnalyticsActionsService, GAConfigService} from "@jbr/ng/core";
 import {AnalyticsActions, GaAnalyticsConfig} from "@jbr/core/analytics";
+import {PAGES_CONFIG_KEY, PagesConfig, PagesConfigMap} from "./page/page-config";
 
 
 
@@ -23,6 +24,11 @@ import {AnalyticsActions, GaAnalyticsConfig} from "@jbr/core/analytics";
     useValue: {
       OVERLAY_COLORS: Object.values(OVERLAY_COLORS).map(key => ({key, value: key})),
       FALLBACK_COLORS: Object.values(FALLBACK_COLORS).map(key => ({key, value: key})),
+      IMAGE_URLS: [
+        {"key": "none", "value": "none"},
+        {"key": "image-1", "value": "/assets/media-examples/sample.png", "label": "Image 1"},
+        {"key": "image-2", "value": "/assets/media-examples/sample_2.png", "label": "Image 2"}
+      ]
     }
   }, {
     provide: githubConfigService,
@@ -40,6 +46,13 @@ import {AnalyticsActions, GaAnalyticsConfig} from "@jbr/core/analytics";
     provide: AnalyticsActionsService,
     useFactory: (appConfig: AppConfig) => {
       return appConfig.getValueByKey<AnalyticsActions>('analytics');
+    },
+    deps: [AppConfig]
+  }, {
+    provide: PagesConfig,
+    useFactory: (appConfig: AppConfig) => {
+      let config = appConfig.getValueByKey<PagesConfigMap>(PAGES_CONFIG_KEY);
+      return new PagesConfig(config);
     },
     deps: [AppConfig]
   }, {

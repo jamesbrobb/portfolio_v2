@@ -1,3 +1,11 @@
+<!-- THIS IS A GENERATED FILE - DO NOT EDIT -->
+
+<a name="dynamic-component-loader"></a>
+# Dynamic component loader
+
+Renders a transparent color overlay.
+
+<a name="dynamic-component-loader-usage"></a>
 ## Usage
 
 ```ts
@@ -95,5 +103,11 @@ export class MyCompnonentLoaderModule {}
 
 
 ```html
-{"gitdown": "include", "file": "./EXAMPLE.html"}
+
+<ng-container myComponentLoader
+              [myComponentInput]="myComponentInput"
+              (myComponentOutput)="onMyComponentInput($event)">
+</ng-container>
+
 ```
+

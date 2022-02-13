@@ -1,5 +1,3 @@
-import {PageConfig} from "../../config/page/page-config";
-
 
 export type RouteConfig = RouteNode[];
 
@@ -27,11 +25,11 @@ export function isParentNode(node: RouteNode | undefined): node is ParentNode {
 }
 
 export type PageNode = {
-  page: PageConfig
+  pageId: string
 } & RouteNodeBase;
 
 export function isPageNode(node: RouteNode | undefined): node is PageNode {
-  return !!node && 'page' in node;
+  return !!node && 'pageId' in node;
 }
 
 

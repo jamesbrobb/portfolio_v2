@@ -1,6 +1,5 @@
 
-<ng-container [dynamicLoader]="'controls-dynamic'"
-              controlsLoader
-              [controls]="controls"
-              (dataChange)="onControlDataChange($event)">
+<ng-container myComponentLoader
+              [myComponentInput]="myComponentInput"
+              (myComponentOutput)="onMyComponentInput($event)">
 </ng-container>

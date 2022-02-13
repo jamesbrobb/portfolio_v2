@@ -1,4 +1,4 @@
-import {Component, Input, NgModule, OnChanges, SimpleChanges} from '@angular/core';
+import {Component, Input, NgModule, OnChanges} from '@angular/core';
 import {FALLBACK_COLORS, FallbackImageComponentModule} from '../fallback/fallback-image.component';
 import {CommonModule} from "@angular/common";
 
@@ -10,24 +10,17 @@ import {CommonModule} from "@angular/common";
 })
 export class ImageComponent implements OnChanges {
 
-    @Input('url') ioUrl: string | undefined;
-    @Input('fallbackSeed') iofallbackSeed: string | undefined;
-    @Input('fallbackColor') ioFallbackColor: FALLBACK_COLORS | undefined;
-    @Input('size') ioSize: string | undefined;
-    @Input('blur') ioBlur: boolean | undefined;
+    @Input() url?: string;
 
-    public url: string | undefined;
-    public fallbackSeed: string | undefined;
-    public fallbackColor: FALLBACK_COLORS | undefined;
-    public blur: boolean | undefined;
+    @Input() fallbackSeed?: string;
+    @Input() fallbackColor?: FALLBACK_COLORS;
+    @Input() size?: string;
+    @Input() blur?: boolean;
 
+    public iUrl?: string;
 
     public ngOnChanges(): void {
-
-        this.url = this.ioUrl ? this.ioUrl.replace('{size}', this.ioSize || '1044w') : '';
-        this.fallbackSeed = this.iofallbackSeed;
-        this.fallbackColor = this.ioFallbackColor;
-        this.blur = this.ioBlur;
+        this.iUrl = this.url ? this.url.replace('{size}', this.size || '1044w') : '';
     }
 }
 

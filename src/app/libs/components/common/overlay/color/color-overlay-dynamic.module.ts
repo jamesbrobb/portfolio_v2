@@ -3,7 +3,7 @@ import {BaseDynamicModule} from "@jbr/components/dynamic/dynamic-component-servi
 import {
   ColorOverlayComponent,
   ColorOverlayComponentModule
-} from "@jbr/components/common/overlay/color/color-overlay.component";
+} from "./color-overlay.component";
 
 
 
@@ -13,7 +13,7 @@ import {
     ColorOverlayComponentModule
   ]
 })
-export class ColorOverlayExampleComponentModule extends BaseDynamicModule {
+export class ColorOverlayDynamicComponentModule extends BaseDynamicModule {
 
   static override readonly COMPONENT = ColorOverlayComponent;
   static override readonly MODULE = ColorOverlayComponentModule;
