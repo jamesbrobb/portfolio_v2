@@ -1,0 +1,102 @@
+@import "src/app/styles/styles";
+
+
+:host {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-width: 264px;
+
+    .my-library-lesson-plan-card {
+        border-radius: 2px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+        background-color: $palette-white;
+
+        .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            min-height: 82px;
+            padding: $gap-m;
+            padding-bottom: 10px;
+            border-bottom: $palette-grey-light-700 1px solid;
+
+            .left {
+                display: flex;
+                flex-direction: row;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+
+                > .image {
+                    display: block;
+                    flex-shrink: 0;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    margin-right: $gap-m;
+                }
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: $palette-dark-blue-700;
+
+                    @include prevent-text-break-out;
+                    @include multi-line-ellipsis(3);
+                }
+            }
+
+            .options {
+                @include button_reset;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                width: 28px;
+                height: 32px;
+                fill: $palette-dark-blue-600;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 36px;
+            padding: $gap-m;
+
+            .tags {
+                display: flex;
+                flex-direction: row;
+                flex-shrink: 1;
+                min-width: 0;
+
+                .tag {
+                    font-size: 11.3px;
+                    line-height: 1.45;
+                    color: $palette-dark-blue-700;
+                    border-radius: $border-radius-s;
+                    background-color: rgba(170, 179, 187, 0.4);;
+                    padding: 2px 5px;
+                    margin-right: $gap-s;
+                    text-overflow:ellipsis;
+                    white-space:nowrap;
+                    overflow:hidden;
+                }
+            }
+
+            .modified-date {
+                font-size: 11.3px;
+                line-height: 1.45;
+                color: $palette-dark-blue-700;
+                flex-shrink: 0;
+            }
+        }
+    }
+}

@@ -76,7 +76,10 @@
           }, {
             "path": "my-library",
             "children": [
-              {"path": "lesson-plan-card"}
+              {
+                "path": "lesson-plan-card",
+                "pageId": "lesson-plan-card"
+              }
             ]
           }
         ]
@@ -276,6 +279,16 @@
       "examples": [
         "image-dynamic"
       ]
+    },
+    "lesson-plan-card": {
+      "docURI": "/libs/product/components/my-library/lesson-plan-card/README.md",
+      "githubLink": "libs/components/product/my-library/lesson-plan-card'",
+      "controls": [{
+        "controlType": "json",
+        "key": "dataprovider",
+        "label": "Data",
+        "value": {"test": "this is some test json"}
+      }]
     },
     "analytics": {
       "detailsURI": "details/analytics/README.md",

@@ -1,0 +1,48 @@
+
+<div class="my-library-lesson-plan-card">
+
+    <div class="top">
+
+        <div class="left">
+
+            <image-component class="image"
+                [url]="backgroundImageUrl"
+                [fallbackSeed]="id"
+                [size]="'800w'">
+            </image-component>
+
+            <div class="title">{{title}}</div>
+
+        </div>
+
+        <button *ngIf="menu"
+            class="options"
+            [matMenuTriggerFor]="menu"
+            (click)="onOptionsClick($event)">
+
+            <icon-component [name]="'options'"></icon-component>
+
+        </button>
+
+    </div>
+
+    <div class="bottom">
+
+        <div class="tags">
+
+            <div *ngFor="let skill of skills"
+                 class="tag">
+                {{skill}}
+            </div>
+
+            <div *ngIf="cefr" class="tag">{{cefr}}</div>
+
+        </div>
+
+        <div class="modified-date">
+            {{modifiedDate}}
+        </div>
+
+    </div>
+
+</div>

@@ -27,7 +27,8 @@ export class CodemirrorComponent implements OnInit, OnChanges {
 
     @Input('value') value: string | undefined;
     @Input('config') config: CodeMirror.EditorConfiguration | undefined;
-    @Output() onChange: EventEmitter < string > = new EventEmitter < string > ();
+    @Output() onChange = new EventEmitter<string>();
+    @Output() onFocus = new EventEmitter<boolean>();
 
     @ViewChild('editor', { static: true }) editor: ElementRef | undefined;
 
@@ -48,6 +49,7 @@ export class CodemirrorComponent implements OnInit, OnChanges {
 
         this._codeMirror.setOption('value', this.value || '');
         this._codeMirror.on('change', () => this._onChange());
+        this._codeMirror.on('focus', () => this._onFocus());
     }
 
     public ngOnChanges(): void {
@@ -68,6 +70,10 @@ export class CodemirrorComponent implements OnInit, OnChanges {
         }
 
         this.onChange.emit(this._codeMirror?.getValue());
+    }
+
+    private _onFocus(): void {
+      this.onFocus.emit();
     }
 }
 

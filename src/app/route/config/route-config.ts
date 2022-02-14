@@ -42,7 +42,9 @@ export const ROUTES_CONFIG_KEY: string = 'routes';
 
 export class RoutesConfig {
 
-  constructor(private _config: RouteConfig) {}
+  constructor(private _config: RouteConfig) {
+    this._parseConfig();
+  }
 
   isPathValid(path: string): boolean {
 
@@ -64,5 +66,9 @@ export class RoutesConfig {
     });
 
     return routeNode;
+  }
+
+  private _parseConfig(): void {
+    // recursively check if node is page and the check if pageId needs to be replaced by path
   }
 }

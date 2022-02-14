@@ -2,6 +2,7 @@ import {Component, Input, Output, EventEmitter, OnChanges, NgModule} from '@angu
 import beautify from 'json-beautify';
 import {CommonModule} from "@angular/common";
 import {CodemirrorComponentModule} from "../codemirror/codemirror.component";
+import {JsonEditorControlValueAccessor} from "./json-editor-control-value-accessor";
 
 
 const config = {
@@ -30,14 +31,16 @@ const config = {
             [config]='config'
             [value]='formattedValue'
             (onChange)='onChangeHandler($event)'
+            (onFocus)='onFocusHandler()'
         ></codemirror-component>
     `,
-    styleUrls: [ './json-editor.component.scss']
+    styleUrls: ['./json-editor.component.scss']
 })
 export class JsonEditorComponent implements OnChanges {
 
     @Input() value: any = {};
-    @Output() onChange: EventEmitter<Object> = new EventEmitter<Object>();
+    @Output() onChange = new EventEmitter<Object>();
+    @Output() onFocus = new EventEmitter();
 
     public config: any;
     public formattedValue: string | undefined;
@@ -56,6 +59,10 @@ export class JsonEditorComponent implements OnChanges {
         }
     }
 
+    public onFocusHandler(): void {
+      this.onFocus.emit();
+    }
+
     private _formatValue(value: any): string {
 
         return beautify (
@@ -71,7 +78,7 @@ export class JsonEditorComponent implements OnChanges {
     CommonModule,
     CodemirrorComponentModule
   ],
-  declarations: [JsonEditorComponent],
-  exports: [JsonEditorComponent]
+  declarations: [JsonEditorComponent, JsonEditorControlValueAccessor],
+  exports: [JsonEditorComponent, JsonEditorControlValueAccessor]
 })
 export class JsonEditorComponentModule {}
