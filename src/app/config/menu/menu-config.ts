@@ -6,6 +6,7 @@ export type MenuConfig = MenuItemNode[];
 export type MenuItemNode = {
   label: string;
   path: string;
+  active: number;
   children?: MenuItemNode[]
 }
 
@@ -25,6 +26,7 @@ function parse(route: RouteNode, parentPath: string = ''): MenuItemNode {
   return {
     path,
     label,
+    active: 0,
     children
   }
 }

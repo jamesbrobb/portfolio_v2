@@ -12,7 +12,7 @@
 
       <ng-container *ngSwitchDefault>
 
-        <div class="control-group" [ngSwitch]="control.controlType">
+        <div class="control-group" [ngSwitch]="control.controlType" [ngClass]="control.controlType">
 
           <label [attr.for]="control.key">{{control.label}}:</label>
 

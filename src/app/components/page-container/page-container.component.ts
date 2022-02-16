@@ -12,7 +12,7 @@ import {ControlGroup} from "../../config/controls/controls-config";
     templateUrl: './page-container.component.html',
     styleUrls: ['./page-container.component.scss'],
     //changeDetection: ChangeDetectionStrategy.OnPush,
-    animations: [openClose]
+    animations: [openClose()]
 })
 export class PageContainerComponent implements OnChanges {
 

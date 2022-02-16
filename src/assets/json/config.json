@@ -288,6 +288,12 @@
         "key": "dataprovider",
         "label": "Data",
         "value": {"test": "this is some test json"}
+      }, {
+        "controlType": "input",
+        "key": "show-menu",
+        "label": "Show contextual menu",
+        "type": "checkbox",
+        "value": "false"
       }]
     },
     "analytics": {

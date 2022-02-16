@@ -1,3 +1,11 @@
+$active-color: #ff5c8d;
+$active-0: #ffffff;
+$active-1: $active-color;
+$active-2: #{lighten($active-color, 5)};
+$active-3: #{lighten($active-color, 10)};
+$active-4: #{lighten($active-color, 15)};
+$active-5: #{lighten($active-color, 20)};
+
 :host {
   display: block;
   padding: 20px 0;
@@ -15,13 +23,39 @@
     text-align: left;
     border-radius: 0;
     text-transform: capitalize;
+    transition: color 400ms;
 
-    &.active {
-      color: #ff5c8d;
+    &.active-0 {
+      color: $active-0;
+    }
+
+    &.active-1 {
+      color: $active-1;
+    }
+
+    &.active-2 {
+      color: $active-2;
+    }
+
+    &.active-3 {
+      color: $active-3;
+    }
+
+    &.active-4 {
+      color: $active-4;
+    }
+
+    &.active-5 {
+      color: $active-5;
     }
   }
 
   mat-tree {
+
+    div[role=group] {
+      overflow: hidden;
+    }
+
     &> mat-tree-node > .mat-button {
       padding-left: 37px;
     }
