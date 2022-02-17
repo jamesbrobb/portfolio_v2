@@ -106,3 +106,15 @@ export type ErrorBrand<Err extends string> = Readonly<{
 export type Invalid<T> = { __errMsg: T };
 
 export type TypeGuard<A, B extends A> = (a: A) => a is B;
+
+// @link https://stackoverflow.com/a/52991061/1798234
+export type RequiredLiteralKeys<T> = keyof { [K in keyof T as string extends K ? never : number extends K ? never :
+  {} extends Pick<T, K> ? never : K]: 0 }
+
+export type OptionalLiteralKeys<T> = keyof { [K in keyof T as string extends K ? never : number extends K ? never :
+  {} extends Pick<T, K> ? K : never]: 0 }
+
+export type IndexKeys<T> = string extends keyof T ? string : number extends keyof T ? number : never;
+
+
+export type GetPropNamesByType<T, KT> = {[K in keyof T]: KT extends T[K] ? K : never}[keyof T]
