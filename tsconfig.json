@@ -28,7 +28,8 @@
       "@jbr/components/mocks": ["src/app/libs/components/index.mocks"],
       "@jbr/core/*": ["src/app/libs/core/*"],
       "@jbr/ng/*": ["src/app/libs/ng/*"],
-      "@jbr/product/*": ["src/app/libs/product/*"]
+      "@jbr/product/*": ["src/app/libs/product/*"],
+      "@jbr/types": ["src/types/index.ts"]
     }
   },
   "angularCompilerOptions": {

@@ -104,3 +104,5 @@ export type ErrorBrand<Err extends string> = Readonly<{
 }>;
 
 export type Invalid<T> = { __errMsg: T };
+
+export type TypeGuard<A, B extends A> = (a: A) => a is B;
