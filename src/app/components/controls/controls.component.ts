@@ -7,7 +7,8 @@ import {
   Input,
   NgModule,
   OnChanges,
-  OnDestroy, Optional,
+  OnDestroy,
+  Optional,
   Output
 } from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
@@ -18,10 +19,16 @@ import {map} from "rxjs/operators";
 import {ControlsOptionsMap, ControlsOptionsMapService} from "./controls.provider";
 import {
   ControlGroup,
-  ControlGroupOption, InputTypes, isDividerControl, isHeaderControl, isInputControl,
-  isInteractiveControl, isJsonControl,
+  ControlGroupOption,
+  InputTypes,
+  isDividerControl,
+  isHeaderControl,
+  isInputControl,
+  isInteractiveControl,
+  isJsonControl,
   isSelectControl
 } from "../../config/controls/controls-config";
+
 import {PipesModule} from "@jbr/components/pipes/pipes.module";
 
 

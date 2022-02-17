@@ -6,26 +6,26 @@
     },
     {
       "path": "about",
-      "pageId": "about"
+      "pageId": "%path%"
     }, {
       "path": "components",
       "children": [{
         "path": "dynamic-loader",
-        "pageId": "dynamic-loader"
+        "pageId": "%path%"
       },{
         "path": "layout",
         "children": [
           {
             "path": "grid",
-            "pageId": "grid"
+            "pageId": "%path%"
           },
           {
             "path": "flex-grid",
-            "pageId": "flex-grid"
+            "pageId": "%path%"
           },
           {
             "path": "responsive-container",
-            "pageId": "responsive-container"
+            "pageId": "%path%"
           }
         ]
       }, {
@@ -47,7 +47,7 @@
           "path": "layout",
           "children": [{
             "path": "page-header",
-            "pageId": "page-header"
+            "pageId": "%path%"
           }]
         }, {
             "path": "media",
@@ -78,7 +78,7 @@
             "children": [
               {
                 "path": "lesson-plan-card",
-                "pageId": "lesson-plan-card"
+                "pageId": "my-library-lesson-plan-card"
               }
             ]
           }
@@ -88,13 +88,13 @@
       "path": "core",
       "children": [{
         "path": "analytics",
-        "pageId": "analytics"
+        "pageId": "%path%"
       }, {
         "path": "commands",
-        "pageId": "commands"
+        "pageId": "%path%"
       }, {
         "path": "http",
-        "pageId": "http"
+        "pageId": "%path%"
       }]
     }
   ],
@@ -280,7 +280,7 @@
         "image-dynamic"
       ]
     },
-    "lesson-plan-card": {
+    "my-library-lesson-plan-card": {
       "docURI": "/libs/product/components/my-library/lesson-plan-card/README.md",
       "githubLink": "libs/components/product/my-library/lesson-plan-card'",
       "controls": [{

@@ -1,4 +1,4 @@
-import {TypeGuard} from "@jbr/types";
+import {OptionalLiteralKeys, RequiredLiteralKeys, TypeGuard} from "@jbr/types";
 
 
 export enum ControlTypes {
@@ -75,8 +75,13 @@ export const isJsonControl = controlTypeGuard<JsonControl>(ControlTypes.json);
 export const isHeaderControl = controlTypeGuard<ControlGroupHeader>(ControlTypes.header);
 export const isDividerControl = controlTypeGuard<ControlGroupDivider>(ControlTypes.divider);
 
+type requiredInteractiveControlProp = RequiredLiteralKeys<InteractiveControl>
+
 export const isInteractiveControl: TypeGuard<ControlGroup, InteractiveControlGroup>
-  = (control: ControlGroup): control is InteractiveControlGroup => 'key' in control;
+  = (control: ControlGroup): control is InteractiveControlGroup => {
+    const prop: requiredInteractiveControlProp = 'key';
+    return prop in control;
+  }
 
 
 

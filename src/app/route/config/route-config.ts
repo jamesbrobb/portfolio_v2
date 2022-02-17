@@ -1,3 +1,5 @@
+import {TypeGuard} from "@jbr/types";
+import {walk} from "@jbr/core/utils";
 
 export type RouteConfig = RouteNode[];
 
@@ -12,28 +14,24 @@ export type RedirectNode = {
   redirectTo: string
 } & RouteNodeBase
 
-export function isRedirectNode(node: RouteNode | undefined): node is RedirectNode {
-  return !!node && 'redirectTo' in node;
-}
-
 export type ParentNode = {
   children: (RedirectNode | ParentNode | PageNode)[]
 } & RouteNodeBase;
-
-export function isParentNode(node: RouteNode | undefined): node is ParentNode {
-  return !!node && 'children' in node;
-}
 
 export type PageNode = {
   pageId: string
 } & RouteNodeBase;
 
-export function isPageNode(node: RouteNode | undefined): node is PageNode {
-  return !!node && 'pageId' in node;
+
+export const isRedirectNode = routeNodeGuard<RedirectNode>('redirectTo');
+export const isParentNode = routeNodeGuard<ParentNode>('children');
+export const isPageNode = routeNodeGuard<PageNode>('pageId');
+
+type routeNodeGuardProp<NT> = NT extends RouteNode ? keyof Omit<NT, keyof RouteNodeBase> : never
+
+function routeNodeGuard<NT extends RouteNode>(prop: routeNodeGuardProp<NT>): TypeGuard<RouteNode | undefined, NT> {
+  return (node: RouteNode | undefined): node is NT => !!node && prop in node;
 }
-
-
-
 
 
 
@@ -69,6 +67,14 @@ export class RoutesConfig {
   }
 
   private _parseConfig(): void {
-    // recursively check if node is page and the check if pageId needs to be replaced by path
+
+    walk<RouteNode, ParentNode>(this._config, isParentNode, 'children', (node) => {
+
+      if (!isPageNode(node) || (node.pageId && node.pageId !== '%path%')) {
+        return;
+      }
+
+      node.pageId = node.path;
+    })
   }
 }
