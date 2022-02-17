@@ -1,5 +1,5 @@
 import {Observable} from 'rxjs';
-import {IfElse, StrictExtract, UnwrapObservables} from "../../../../../types";
+import {IfElse, StrictExtract, UnwrapObservables} from "@jbr/types";
 
 
 export type CommandTypeTemplate = Command<unknown, unknown, ReadonlyArray<unknown>>;

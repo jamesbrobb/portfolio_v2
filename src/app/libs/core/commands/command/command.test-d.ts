@@ -1,5 +1,5 @@
 import {expectType} from "tsd";
-import {Equals} from "../../../../../types";
+import {Equals} from "@jbr/types";
 import {Command, GetCommandTypeParams} from "./command";
 import {
     AsyncTestCommand,
