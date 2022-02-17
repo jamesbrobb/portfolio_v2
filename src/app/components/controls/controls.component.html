@@ -2,38 +2,36 @@
 
   <ng-container *ngFor="let control of controls">
 
-    <ng-container [ngSwitch]="control.controlType">
-
-      <ng-container *ngSwitchCase="'header'">
-        <h2>{{control.label}}</h2>
+      <ng-container *ngIf="control| guardType: isHeaderControl as header">
+        <h2>{{header.label}}</h2>
       </ng-container>
 
-      <hr *ngSwitchCase="'divider'"/>
+      <hr *ngIf="control| guardType: isDividerControl"/>
 
-      <ng-container *ngSwitchDefault>
+      <ng-container *ngIf="control| guardType: isInteractiveControl as interactive">
 
-        <div class="control-group" [ngSwitch]="control.controlType" [ngClass]="control.controlType">
+        <div class="control-group" [ngClass]="interactive.controlType">
 
-          <label [attr.for]="control.key">{{control.label}}:</label>
+          <label [attr.for]="interactive.key">{{interactive.label}}:</label>
 
-          <input *ngSwitchCase="'input'"
-            [formControlName]="control.key"
-            [id]="control.key"
-            [name]="control.key"
-            [type]="control.type || 'text'"
-            [value]="control.value"
-            [min]="control.min || 0"
-            [max]="control.max || 100"/>
+          <input *ngIf="interactive| guardType: isInputControl as input"
+            [formControlName]="input.key"
+            [id]="input.key"
+            [name]="input.key"
+            [type]="input.type || 'text'"
+            [value]="input.value"
+            [min]="input.min || 0"
+            [max]="input.max || 100"/>
 
-          <select *ngSwitchCase="'select'" [id]="control.key" [formControlName]="control.key">
+          <select *ngIf="interactive| guardType: isSelectControl as select" [id]="select.key" [formControlName]="select.key">
             <option value="">none</option>
-            <option *ngFor="let opt of control.options" [value]="opt.value">{{opt.label || opt.value}}</option>
+            <option *ngFor="let opt of select.options" [value]="opt.value">{{opt.label || opt.value}}</option>
           </select>
 
-          <json-editor *ngSwitchCase="'json'"
+          <json-editor *ngIf="interactive| guardType: isJsonControl as json"
             jsonEditorControl
-            [id]="control.key"
-            [formControlName]="control.key">
+            [id]="json.key"
+            [formControlName]="json.key">
           </json-editor>
 
         </div>
@@ -41,7 +39,5 @@
       </ng-container>
 
     </ng-container>
-
-  </ng-container>
 
 </form>

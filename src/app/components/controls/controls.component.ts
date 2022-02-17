@@ -16,7 +16,13 @@ import {MatInputModule} from '@angular/material/input';
 import {JsonEditorComponentModule} from "../forms";
 import {map} from "rxjs/operators";
 import {ControlsOptionsMap, ControlsOptionsMapService} from "./controls.provider";
-import {ControlGroup, ControlGroupOption} from "../../config/controls/controls-config";
+import {
+  ControlGroup,
+  ControlGroupOption, InputTypes, isDividerControl, isHeaderControl, isInputControl,
+  isInteractiveControl, isJsonControl,
+  isSelectControl
+} from "../../config/controls/controls-config";
+import {PipesModule} from "@jbr/components/pipes/pipes.module";
 
 
 
@@ -38,7 +44,14 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
 
   @Output() dataChange = new EventEmitter<unknown>();
 
-  public form!: FormGroup;
+  form!: FormGroup;
+
+  isInputControl = isInputControl;
+  isSelectControl = isSelectControl;
+  isJsonControl = isJsonControl;
+  isHeaderControl = isHeaderControl;
+  isDividerControl = isDividerControl;
+  isInteractiveControl = isInteractiveControl;
 
   private _optionsMap: ControlsOptionsMap | undefined;
   private _formSubscription: Subscription | undefined;
@@ -95,10 +108,10 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
     const controls: {[key: string]: FormControl} = {};
 
     this.controls
-      .filter((control) => !!control.key)
+      .filter((control) => isInteractiveControl(control))
       .map((control) => {
 
-        if(control.optionsId) {
+        if(isSelectControl(control) && control.optionsId) {
 
           if (this._optionsMap) {
             control.options = this._optionsMap[control.optionsId] as ControlGroupOption[]
@@ -108,6 +121,11 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
         return control;
       })
       .forEach((control) => {
+
+        if(!isInteractiveControl(control)) {
+          return;
+        }
+
         controls[control.key] = new FormControl(control.value || '')
       });
 
@@ -121,7 +139,12 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
     const res = Object.assign({}, value);
 
     this.controls?.forEach((control) => {
-      if(control.type === 'number') {
+
+      if(!isInputControl(control)) {
+        return;
+      }
+
+      if(control.type === InputTypes.num) {
         res[control.key] = parseInt(value[control.key] as string);
       }
     });
@@ -136,7 +159,8 @@ export class ControlsComponent implements ControlComponentIO, OnChanges, OnDestr
     CommonModule,
     MatInputModule,
     ReactiveFormsModule,
-    JsonEditorComponentModule
+    JsonEditorComponentModule,
+    PipesModule
   ],
   declarations: [ControlsComponent],
   exports: [ControlsComponent]
